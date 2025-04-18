@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "name": "Computer Science",
+      "logo": "/assets/fist.png",
+      "activities": [
+        "Won 1st Prize in National Hackathon 2024",
+        "Published 10 research papers in 2023",
+        "Internship MoU with Infosys"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Mechanical Engineering",
+      "logo": "/assets/dept2-logo.png",
+      "activities": [
+        "Designed eco-friendly vehicle prototype",
+        "MoU with Desometric Engineering Services"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Electrical Engineering",
+      "logo": "/assets/dept3-logo.png",
+      "activities": ["Developed smart grid system"]
+    },
+    {
+      "id": 4,
+      "name": "Civil Engineering",
+      "logo": "/assets/dept4-logo.png",
+      "activities": ["Built sustainable bridge model"]
+    },
+    {
+      "id": 5,
+      "name": "Chemical Engineering",
+      "logo": "/assets/dept5-logo.png",
+      "activities": ["Innovated bio-fuel production"]
+    },
+    {
+      "id": 6,
+      "name": "Aerospace Engineering",
+      "logo": "/assets/dept6-logo.png",
+      "activities": ["Designed drone prototype"]
+    },
+    {
+      "id": 7,
+      "name": "Biotechnology",
+      "logo": "/assets/dept7-logo.png",
+      "activities": ["Developed new enzyme for medical use"]
+    }
+  ]
