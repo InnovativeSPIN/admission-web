@@ -1,21 +1,26 @@
 import { motion } from 'framer-motion';
+import CollegeVideo from '../components/Collegevideo.jsx'; 
 import departments from '../data.json';
-import fistLogo from '../assets/fist.png';
-import dept2Logo from '../assets/civil.png';
-import dept3Logo from '../assets/ece.png';
-import dept4Logo from '../assets/eee.png';
-import dept5Logo from '../assets/ai.png';
-import dept6Logo from '../assets/it.jpg';
-import dept7Logo from '../assets/mech.png';
+
+
+
+
+import fistLogo from '../assets/1.png';
+import dept2Logo from '../assets/2.png';
+import dept3Logo from '../assets/3.png';
+import dept4Logo from '../assets/4.png';
+import dept5Logo from '../assets/5.png';
+import dept6Logo from '../assets/6.png';
+import dept7Logo from '../assets/7.png';
 
 const logoMap = {
-  '/assets/fist.png': fistLogo,
-  '/assets/civil.png': dept2Logo,
-  '/assets/ece.png': dept3Logo,
-  '/assets/eee.png': dept4Logo,
-  '/assets/ai.png': dept5Logo,
-  '/assets/it.jpg': dept6Logo,
-  '/assets/mech.png': dept7Logo,
+  '/assets/1.png': fistLogo,
+  '/assets/2.png': dept2Logo,
+  '/assets/3.png': dept3Logo,
+  '/assets/4.png': dept4Logo,
+  '/assets/5.png': dept5Logo,
+  '/assets/6.png': dept6Logo,
+  '/assets/7.png': dept7Logo,
 };
 
 const DepartmentLogos = ({ onSelectDepartment }) => {
@@ -31,20 +36,49 @@ const DepartmentLogos = ({ onSelectDepartment }) => {
   };
 
   return (
-    <div className="department-logos-container">
-      {departments.map((dept, index) => (
-        <motion.img
-          key={dept.id}
-          src={logoMap[dept.logo] || dept.logo}
-          alt={dept.name}
-          className="dept-logo"
-          variants={logoVariants}
-          initial="hidden"
-          animate="visible"
-          custom={index}
-          onClick={() => onSelectDepartment(dept)}
-        />
-      ))}
+    <div className="department-logos-container" style={{ position: 'relative', width: '100%', height: '100vh', overflow: 'hidden' }}>
+      
+     
+      <CollegeVideo />
+     
+      
+      <div style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,  
+        zIndex: -1, 
+      }}></div>
+
+      
+      <div style={{ position: 'relative', zIndex: 1, width: '100%', height: '100%' }}>
+        {departments.map((dept, index) => (
+          <motion.img
+            key={dept.id}
+            src={logoMap[dept.logo] || dept.logo}
+            alt={dept.name}
+            className="dept-logo"
+            variants={logoVariants}
+            initial="hidden"
+            animate="visible"
+            custom={index}
+            onClick={() => onSelectDepartment(dept)}
+            style={{
+              width: '100px',
+              height: '100px',
+              position: 'absolute',
+              left:'310px',
+              top:'220px',
+              cursor: 'pointer',
+              
+              
+              
+            }}
+          />
+          
+        ))}
+      </div>
+      
+      
     </div>
   );
 };

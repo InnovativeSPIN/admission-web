@@ -6,8 +6,8 @@
   
   body {
     margin: 0;
-    background: var(--primary-bg);
-    color: var(--text-white);
+    /* background: var(--primary-bg); */
+    /* color: var(--text-white); */
     font-family: 'Fira Code', monospace;
     overflow: hidden;
   }
@@ -26,6 +26,8 @@
   .college-logo {
     width: 300px;
     height: auto;
+    /* margin-left: 600px;
+    margin-top: 310px; */
   }
   
   .department-logos-container {
@@ -154,3 +156,7 @@
 
 
    */
+
+
+
+

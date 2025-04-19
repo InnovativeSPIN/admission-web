@@ -4,6 +4,9 @@ import DepartmentLogos from './components/DepartmentLogos';
 import DepartmentActivities from './components/DepartmentActivities';
 import './styles/App.css';
 
+
+
+
 function App() {
   const [view, setView] = useState('college');
   const [selectedDepartment, setSelectedDepartment] = useState(null);

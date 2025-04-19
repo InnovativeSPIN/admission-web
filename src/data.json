@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Computer Science",
-    "logo": "/assets/fist.png",
+    "logo": "/assets/3.png",
     "activities": [
       {
         "text": "Won 1st Prize in National Hackathon 2024",
@@ -21,7 +21,7 @@
   {
     "id": 2,
     "name": "Civil Engineering",
-    "logo": "/assets/civil.png",
+    "logo": "/assets/5.png",
     "activities": [
       {
         "text": "Designed eco-friendly vehicle prototype",
@@ -36,7 +36,7 @@
   {
     "id": 3,
     "name": "Electronics and Communication Engineering",
-    "logo": "/assets/ece.png",
+    "logo": "/assets/7.png",
     "activities": [
       {
         "text": "Developed smart grid system",
@@ -47,7 +47,7 @@
   {
     "id": 4,
     "name": "Electrical and Electronics Engineering",
-    "logo": "/assets/eee.png",
+    "logo": "/assets/6.png",
     "activities": [
       {
         "text": "Built sustainable bridge model",
@@ -58,7 +58,7 @@
   {
     "id": 5,
     "name": "Artificial Intelligence and Data Science",
-    "logo": "/assets/ai.png",
+    "logo": "/assets/2.png",
     "activities": [
       {
         "text": "Innovated bio-fuel production",
@@ -69,7 +69,7 @@
   {
     "id": 6,
     "name": "Information Technology",
-    "logo": "/assets/it.jpg",
+    "logo": "/assets/1.png",
     "activities": [
       {
         "text": "Designed drone prototype",
@@ -80,7 +80,7 @@
   {
     "id": 7,
     "name": "Mechanical Engineering",
-    "logo": "/assets/mech.png",
+    "logo": "/assets/4.png",
     "activities": [
       {
         "text": "Developed new enzyme for medical use",
