@@ -38,8 +38,8 @@
   
   .dept-logo {
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     cursor: pointer;
     border-radius: 50%;
     box-shadow: 0 0 10px var(--accent-color);
@@ -49,7 +49,7 @@
     transform: scale(1.1);
     box-shadow: 0 0 20px var(--accent-color);
   }
-  
+/*   
   .activities-container {
     text-align: center;
     max-width: 600px;
@@ -98,4 +98,59 @@
       width: 60px;
       height: 60px;
     }
+  }.activity-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s var(--transition-ease);
   }
+  
+  .activity-item:hover {
+    transform: translateX(5px);
+    background: rgba(0, 221, 235, 0.2);
+    box-shadow: 0 0 20px var(--shadow-color);
+  }
+  
+  .activity-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 10px var(--shadow-color);
+    transition: transform 0.3s var(--transition-ease);
+  }
+  
+  .activity-item:hover .activity-image {
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    .activity-item {
+      gap: 10px;
+      padding: 10px;
+    }
+    
+    .activity-image {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .activity-item {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .activity-image {
+      width: 80px;
+      height: 80px;
+    }
+  } 
+
+
+   */
