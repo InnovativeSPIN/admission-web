@@ -4,7 +4,7 @@ import departments from '../data.json';
 
 
 
-
+import collegeLogo from '../assets/College_logo.webp';
 import fistLogo from '../assets/1.png';
 import dept2Logo from '../assets/2.png';
 import dept3Logo from '../assets/3.png';
@@ -13,7 +13,12 @@ import dept5Logo from '../assets/5.png';
 import dept6Logo from '../assets/6.png';
 import dept7Logo from '../assets/7.png';
 
+
+const center ={
+   '.assets/College_logo.webp': collegeLogo,
+};
 const logoMap = {
+  
   '/assets/1.png': fistLogo,
   '/assets/2.png': dept2Logo,
   '/assets/3.png': dept3Logo,
@@ -36,7 +41,7 @@ const DepartmentLogos = ({ onSelectDepartment }) => {
   };
 
   return (
-    <div className="department-logos-container" style={{ position: 'relative', width: '100%', height: '100vh', overflow: 'hidden' }}>
+    <div className="department-logos-container" >
       
      
       <CollegeVideo />
@@ -48,10 +53,18 @@ const DepartmentLogos = ({ onSelectDepartment }) => {
         left: 0,  
         zIndex: -1, 
       }}></div>
-
+       <div> 
+          <img
+                     src={collegeLogo}
+                     alt="College Logo"
+                     style={{ maxWidth: '300px', width: '100%', position: 'relative', zIndex: -1 , cursor: 'pointer'}}
+                   />
+       </div>
       
-      <div style={{ position: 'relative', zIndex: 1, width: '100%', height: '100%' }}>
+      <div style={{ position: 'relative', zIndex: 1,  }}>
         {departments.map((dept, index) => (
+
+          
           <motion.img
             key={dept.id}
             src={logoMap[dept.logo] || dept.logo}
@@ -66,9 +79,10 @@ const DepartmentLogos = ({ onSelectDepartment }) => {
               width: '100px',
               height: '100px',
               position: 'absolute',
-              left:'310px',
-              top:'220px',
+              left:'20px',
+              top:'40px',
               cursor: 'pointer',
+              
               
               
               
