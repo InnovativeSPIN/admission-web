@@ -75,8 +75,7 @@
     "id": 7,
     "name": "Aerospace Engineering",
     "logo": "/assets/7.png",
-    "details": {
-      "about": "Pushing boundaries in aircraft design, space exploration, and propulsion systems.",
+    "details": {      "about": "Pushing boundaries in aircraft design, space exploration, and propulsion systems.",
       "faculty": ["Prof. Daniel Wright", "Dr. Aisha Khan", "Prof. Mark Evans"],
       "facilities": ["Wind Tunnel Lab", "Flight Simulation Center", "Propulsion Research Lab"],
       "achievements": ["Designed micro-satellite prototype", "Won NASA Student Challenge 2023", "Published 7 papers in aerospace journals"],

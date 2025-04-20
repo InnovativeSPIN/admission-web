@@ -1,58 +1,32 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import departments from '../acti.json';
 import '../styles/DepartmentActivities.css';
+import departmentsData from '../data.json';
 
-// Logo imports from DepartmentLogos for mapping
-import fistLogo from '../assets/1.png';
-import dept2Logo from '../assets/2.png';
-import dept3Logo from '../assets/3.png';
-import dept4Logo from '../assets/4.png';
-import dept5Logo from '../assets/5.png';
-import dept6Logo from '../assets/6.png';
-import dept7Logo from '../assets/7.png';
-
-// Logo mapping
-const logoMap = {
-  '/assets/1.png': fistLogo,
-  '/assets/2.png': dept2Logo,
-  '/assets/3.png': dept3Logo,
-  '/assets/4.png': dept4Logo,
-  '/assets/5.png': dept5Logo,
-  '/assets/6.png': dept6Logo,
-  '/assets/7.png': dept7Logo,
-};
+// Dynamically import all images
+const images = import.meta.glob('../assets/**/*.{png,jpg,jpeg}', { eager: true });
+const imageMap = {};
+for (const [path, module] of Object.entries(images)) {
+  const jsonPath = path.replace('../assets', '/assets');
+  imageMap[jsonPath] = module.default;
+}
 
 const DepartmentActivities = ({ department, onBack }) => {
   const [voicesLoaded, setVoicesLoaded] = useState(false);
   const [activeSection, setActiveSection] = useState('about');
   const [isLoading, setIsLoading] = useState(true);
   const [logoError, setLogoError] = useState(false);
-  const [dataError, setDataError] = useState(null);
-  const [selectedDepartment, setSelectedDepartment] = useState(null);
+  const [placementErrors, setPlacementErrors] = useState({});
+  const [activityErrors, setActivityErrors] = useState({});
+  const [achievementErrors, setAchievementErrors] = useState({}); // New state for achievement image errors
+  const [enlargedImage, setEnlargedImage] = useState(null); // State for enlarged image
+
+  const selectedDepartment = departmentsData.find(
+    (dept) => dept.name === department?.name
+  );
 
   useEffect(() => {
-    if (!department?.id) {
-      setDataError('No department selected');
-      setIsLoading(false);
-      return;
-    }
-
-    console.log('Incoming department prop:', department);
-
-    try {
-      const dept = departments.find(d => d.id === department.id);
-      if (!dept) {
-        throw new Error(`Department with id ${department.id} not found in acti.json`);
-      }
-      setSelectedDepartment(dept);
-      setIsLoading(false);
-      console.log('Matched department from acti.json:', dept);
-    } catch (error) {
-      setDataError(error.message);
-      setIsLoading(false);
-      console.error('Error loading department data:', error);
-    }
+    if (!department?.name) return;
 
     const loadVoices = () => {
       const voices = window.speechSynthesis.getVoices();
@@ -64,15 +38,18 @@ const DepartmentActivities = ({ department, onBack }) => {
     loadVoices();
     window.speechSynthesis.onvoiceschanged = loadVoices;
 
+    const timer = setTimeout(() => setIsLoading(false), 500);
+
     return () => {
       window.speechSynthesis.onvoiceschanged = null;
+      clearTimeout(timer);
     };
   }, [department]);
 
   useEffect(() => {
-    if (!selectedDepartment?.name || !voicesLoaded || dataError) return;
+    if (!department?.name || !voicesLoaded) return;
 
-    const utterance = new SpeechSynthesisUtterance(`Welcome to ${selectedDepartment.name} Department`);
+    const utterance = new SpeechSynthesisUtterance(`Welcome to ${department.name} Department`);
     utterance.volume = 1;
     utterance.rate = 1;
     utterance.pitch = 1.2;
@@ -97,15 +74,23 @@ const DepartmentActivities = ({ department, onBack }) => {
       clearTimeout(timer);
       window.speechSynthesis.cancel();
     };
-  }, [selectedDepartment, voicesLoaded, dataError]);
+  }, [department, voicesLoaded]);
 
-  if (dataError) return <div className="error-message">{dataError}</div>;
+  // Handle image click to enlarge
+  const handleImageClick = (imageSrc) => {
+    setEnlargedImage(imageSrc);
+  };
 
-  if (!selectedDepartment) return <div className="no-department">No department data available</div>;
+  // Close the modal
+  const handleCloseModal = () => {
+    setEnlargedImage(null);
+  };
 
-  const sections = ['about', 'faculty', 'facilities', 'achievements', 'placements'];
+  if (!department || !selectedDepartment) return <div className="no-department">No department selected</div>;
 
-  const logoSrc = logoError ? '/assets/fallback.png' : logoMap[selectedDepartment.logo] || selectedDepartment.logo;
+  const sections = ['about', 'achievements', 'placements', 'activities'];
+
+  const logoSrc = logoError ? imageMap['/assets/fallback.png'] || '/assets/fallback.png' : imageMap[selectedDepartment.logo] || selectedDepartment.logo;
 
   return (
     <motion.div
@@ -118,7 +103,6 @@ const DepartmentActivities = ({ department, onBack }) => {
         <div className="loading">Loading...</div>
       ) : (
         <div className="department-details-wrapper">
-          {/* Left Side: Department Logo */}
           <motion.div
             className="department-logo-container"
             initial={{ scale: 0.8, opacity: 0 }}
@@ -127,22 +111,20 @@ const DepartmentActivities = ({ department, onBack }) => {
           >
             <img
               src={logoSrc}
-              alt={`${selectedDepartment.name} Department Logo`}
+              alt={`${department.name} Department Logo`}
               className="department-logo"
               onError={() => {
                 setLogoError(true);
                 console.error(`Failed to load logo: ${selectedDepartment.logo}`);
               }}
-              onClick={() => window.open(`https://www.example.com/${selectedDepartment.name.toLowerCase()}`, '_blank')}
-              title={`Visit ${selectedDepartment.name} Department Website`}
+              // onClick={() => window.open(`https://www.example.com/${department.name.toLowerCase()}`, '_blank')}
+              title={`Visit ${department.name} Department Website`}
             />
           </motion.div>
 
-          {/* Right Side: Department Details */}
           <div className="department-info">
-            <h2 className="department-heading">{selectedDepartment.name} Department</h2>
+            <h2 className="department-heading">{department.name} Department</h2>
             
-            {/* Navigation Tabs */}
             <div className="section-tabs">
               {sections.map((section) => (
                 <button
@@ -155,7 +137,6 @@ const DepartmentActivities = ({ department, onBack }) => {
               ))}
             </div>
 
-            {/* Section Content */}
             <motion.div
               className="section-content"
               key={activeSection}
@@ -164,112 +145,93 @@ const DepartmentActivities = ({ department, onBack }) => {
               transition={{ duration: 0.3 }}
             >
               {activeSection === 'about' && (
-                <div className="section-text about-section">
-                  <h3>About the Department</h3>
-                  <p>{selectedDepartment.details?.about || 'No information available'}</p>
-                </div>
-              )}
-              {activeSection === 'faculty' && (
-                <div className="section-list faculty-section">
-                  <h3>Faculty</h3>
-                  {selectedDepartment.details?.faculty?.length > 0 ? (
-                    <div className="faculty-grid">
-                      {selectedDepartment.details.faculty.map((item, index) => (
-                        <div key={index} className="faculty-item">
-                          <img
-                            src={item.image}
-                            alt={item.name}
-                            className="faculty-image"
-                            onError={(e) => {
-                              e.target.src = '/assets/fallback.png';
-                              console.error(`Failed to load faculty image: ${item.image}`);
-                            }}
-                          />
-                          <p>{item.name}</p>
-                        </div>
-                      ))}
-                    </div>
-                  ) : (
-                    <p>No faculty information available</p>
-                  )}
-                </div>
-              )}
-              {activeSection === 'facilities' && (
-                <div className="section-list facilities-section">
-                  <h3>Facilities</h3>
-                  {selectedDepartment.details?.facilities?.length > 0 ? (
-                    <div className="facilities-grid">
-                      {selectedDepartment.details.facilities.map((item, index) => (
-                        <div key={index} className="facility-item">
-                          <img
-                            src={item.image}
-                            alt={item.name}
-                            className="facility-image"
-                            onError={(e) => {
-                              e.target.src = '/assets/fallback.png';
-                              console.error(`Failed to load facility image: ${item.image}`);
-                            }}
-                          />
-                          <p>{item.name}</p>
-                        </div>
-                      ))}
-                    </div>
-                  ) : (
-                    <p>No facilities information available</p>
-                  )}
-                </div>
+                <div className="section-text">{selectedDepartment.about || 'No information available'}</div>
               )}
               {activeSection === 'achievements' && (
-                <div className="section-list achievements-section">
-                  <h3>Achievements</h3>
-                  {selectedDepartment.details?.achievements?.length > 0 ? (
-                    <div className="achievements-grid">
-                      {selectedDepartment.details.achievements.map((item, index) => (
-                        <div key={index} className="achievement-item">
-                          <img
-                            src={item.image}
-                            alt={item.description}
-                            className="achievement-image"
-                            onError={(e) => {
-                              e.target.src = '/assets/fallback.png';
-                              console.error(`Failed to load achievement image: ${item.image}`);
-                            }}
-                          />
-                          <p>{item.description}</p>
+                <ul className="section-list achievements-list">
+                  {selectedDepartment.achievements?.length > 0 ? (
+                    selectedDepartment.achievements.map((achievement, index) => (
+                      <li key={index} className="achievement-item">
+                        <div className="achievement-content">
+                          <p>{achievement.text}</p>
+                          {achievement.image && (
+                            <img
+                              src={achievementErrors[index] ? imageMap['/assets/fallback.png'] || '/assets/fallback.png' : imageMap[achievement.image] || '/assets/fallback.png'}
+                              alt={achievement.text}
+                              className="achievement-image"
+                              onError={() => setAchievementErrors((prev) => ({ ...prev, [index]: true }))}
+                              onClick={() => handleImageClick(imageMap[achievement.image] || '/assets/fallback.png')}
+                            />
+                          )}
                         </div>
-                      ))}
-                    </div>
+                      </li>
+                    ))
                   ) : (
-                    <p>No achievements information available</p>
+                    <li>No achievements information available</li>
                   )}
-                </div>
+                </ul>
               )}
               {activeSection === 'placements' && (
-                <div className="section-list placements-section">
-                  <h3>Placements</h3>
-                  {selectedDepartment.details?.placements?.length > 0 ? (
-                    <div className="placements-grid">
-                      {selectedDepartment.details.placements.map((item, index) => (
-                        <div key={index} className="placement-item">
-                          <img
-                            src={item.image}
-                            alt={item.description}
-                            className="placement-image"
-                            onError={(e) => {
-                              e.target.src = '/assets/fallback.png';
-                              console.error(`Failed to load placement image: ${item.image}`);
-                            }}
-                          />
-                          <p>{item.description}</p>
+                <ul className="section-list placements-list">
+                  {selectedDepartment.placements?.length > 0 ? (
+                    selectedDepartment.placements.map((placement, index) => (
+                      <li key={index} className="placement-item">
+                        <div className="placement-content">
+                          <p>{placement.company}</p>
+                          {placement.image && (
+                            <img
+                              src={placementErrors[index] ? imageMap['/assets/fallback.png'] || '/assets/fallback.png' : imageMap[placement.image] || '/assets/fallback.png'}
+                              alt={`${placement.company} logo`}
+                              className="placement-image"
+                              onError={() => setPlacementErrors((prev) => ({ ...prev, [index]: true }))}
+                              onClick={() => handleImageClick(imageMap[placement.image] || '/assets/fallback.png')}
+                            />
+                          )}
                         </div>
-                      ))}
-                    </div>
+                      </li>
+                    ))
                   ) : (
-                    <p>No placement information available</p>
+                    <li>No placement information available</li>
                   )}
-                </div>
+                </ul>
+              )}
+              {activeSection === 'activities' && (
+                <ul className="section-list activities-list">
+                  {selectedDepartment.activities?.length > 0 ? (
+                    selectedDepartment.activities.map((activity, index) => (
+                      <li key={index} className="activity-item">
+                        <div className="activity-content">
+                          <p>{activity.text}</p>
+                          {activity.image && (
+                            <img
+                              src={activityErrors[index] ? imageMap['/assets/fallback.png'] || '/assets/fallback.png' : imageMap[activity.image] || '/assets/fallback.png'}
+                              alt={activity.text}
+                              className="activity-image"
+                              onError={() => setActivityErrors((prev) => ({ ...prev, [index]: true }))}
+                              onClick={() => handleImageClick(imageMap[activity.image] || '/assets/fallback.png')}
+                            />
+                          )}
+                        </div>
+                      </li>
+                    ))
+                  ) : (
+                    <li>No activities available</li>
+                  )}
+                </ul>
               )}
             </motion.div>
+          </div>
+        </div>
+      )}
+
+      {/* Modal for enlarged image */}
+      {enlargedImage && (
+        <div className="image-modal" onClick={handleCloseModal}>
+          <div className="image-modal-content">
+            <img src={enlargedImage} alt="Enlarged view" />
+            <button className="image-modal-close" onClick={handleCloseModal}>
+              ×
+            </button>
           </div>
         </div>
       )}

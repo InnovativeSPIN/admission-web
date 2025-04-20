@@ -1,3 +1,5 @@
+/* Existing styles remain unchanged, adding achievements section */
+
 .department-details-container {
   position: relative;
   width: 100%;
@@ -70,6 +72,7 @@
   transition: background-color 0.3s ease;
 }
 
+
 .tab-button:hover {
   background-color: #d0d0d0;
 }
@@ -129,6 +132,222 @@
   padding: 50px;
 }
 
+/* Styles for achievements-list to create a 3x3 grid */
+.achievements-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Space between grid items */
+  
+}
+
+/* Style for each achievement item */
+.achievement-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Style for achievement content */
+.achievement-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Style for achievement text */
+.achievement-content p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Style for achievement images to make them circular */
+.achievement-image {
+  width: 200px; /* Fixed width for circular shape */
+  height: 200px; /* Fixed height for circular shape */
+  border-radius: 5%; /* Makes the image circular */
+  object-fit: cover; /* Ensures image fills the circle without distortion */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+  cursor: pointer; /* Indicates the image is clickable */
+}
+
+/* Hover effect for achievement images */
+.achievement-image:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Styles for activities-list to create a 3x3 grid */
+.activities-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Space between grid items */
+}
+
+/* Style for each activity item */
+.activity-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Style for activity content */
+.activity-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Style for activity text */
+.activity-content p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Style for activity images to make them circular */
+.activity-image {
+  width: 200px; /* Fixed width for circular shape */
+  height: 200px; /* Fixed height for circular shape */
+  border-radius: 5%; /* Makes the image circular */
+  object-fit: cover; /* Ensures image fills the circle without distortion */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+  cursor: pointer; /* Indicates the image is clickable */
+}
+
+/* Hover effect for activity images */
+.activity-image:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Styles for placements-list to create a 3x3 grid */
+.placements-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Space between grid items */
+}
+
+/* Style for each placement item */
+.placement-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Style for placement content */
+.placement-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Style for company name */
+.placement-content p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Style for placement images to make them circular */
+.placement-image {
+  width: 100px; /* Fixed width for circular shape */
+  height: 100px; /* Fixed height for circular shape */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures image fills the circle without distortion */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+  cursor: pointer; /* Indicates the image is clickable */
+}
+
+/* Hover effect for placement images */
+.placement-image:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Remove conflicting styles */
+department-logo,
+.placement-image,
+.activity-image,
+.achievement-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ensure department-logo keeps its original size */
+.department-logo {
+  width: 250px; /* Matches .department-logo above */
+  height: 250px;
+}
+
+/* Modal for enlarged image */
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.image-modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.image-modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.image-modal-close {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.image-modal-close:hover {
+  background-color: #e0e0e0;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .department-details-wrapper {
@@ -148,5 +367,36 @@
 
   .department-info {
     width: 100%;
+  }
+
+  /* Adjust achievements, placements, and activities grid for smaller screens */
+  .achievements-list,
+  .placements-list,
+  .activities-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    gap: 15px;
+  }
+
+  .achievement-image,
+  .placement-image,
+  .activity-image {
+    width: 80px; /* Smaller size for mobile */
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .achievements-list,
+  .placements-list,
+  .activities-list {
+    grid-template-columns: 1fr; /* 1 column on very small screens */
+    gap: 10px;
+  }
+
+  .achievement-image,
+  .placement-image,
+  .activity-image {
+    width: 60px; /* Even smaller for tiny screens */
+    height: 60px;
   }
 }
