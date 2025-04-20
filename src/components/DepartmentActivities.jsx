@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import '../styles/DepartmentActivities.css';
 import departmentsData from '../data.json';
+import CollegeVideo from '../components/Collegevideo.jsx';
 
 // Dynamically import all images
 const images = import.meta.glob('../assets/**/*.{png,jpg,jpeg}', { eager: true });
@@ -18,8 +19,8 @@ const DepartmentActivities = ({ department, onBack }) => {
   const [logoError, setLogoError] = useState(false);
   const [placementErrors, setPlacementErrors] = useState({});
   const [activityErrors, setActivityErrors] = useState({});
-  const [achievementErrors, setAchievementErrors] = useState({}); // New state for achievement image errors
-  const [enlargedImage, setEnlargedImage] = useState(null); // State for enlarged image
+  const [achievementErrors, setAchievementErrors] = useState({});
+  const [enlargedImage, setEnlargedImage] = useState(null);
 
   const selectedDepartment = departmentsData.find(
     (dept) => dept.name === department?.name
@@ -76,12 +77,10 @@ const DepartmentActivities = ({ department, onBack }) => {
     };
   }, [department, voicesLoaded]);
 
-  // Handle image click to enlarge
   const handleImageClick = (imageSrc) => {
     setEnlargedImage(imageSrc);
   };
 
-  // Close the modal
   const handleCloseModal = () => {
     setEnlargedImage(null);
   };
@@ -99,6 +98,9 @@ const DepartmentActivities = ({ department, onBack }) => {
       transition={{ duration: 0.5 }}
       className="department-details-container"
     >
+      {/* Add CollegeVideo as background */}
+      <CollegeVideo />
+      
       {isLoading ? (
         <div className="loading">Loading...</div>
       ) : (
@@ -117,7 +119,6 @@ const DepartmentActivities = ({ department, onBack }) => {
                 setLogoError(true);
                 console.error(`Failed to load logo: ${selectedDepartment.logo}`);
               }}
-              // onClick={() => window.open(`https://www.example.com/${department.name.toLowerCase()}`, '_blank')}
               title={`Visit ${department.name} Department Website`}
             />
           </motion.div>

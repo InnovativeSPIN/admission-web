@@ -1,4 +1,3 @@
-/* Existing styles remain unchanged, adding achievements section */
 
 .department-details-container {
   position: relative;
@@ -8,7 +7,18 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background-color: #f5f5f5;
+  background-color: #f5f5f5
+}
+
+.college-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -1; 
+  filter: brightness(0.7); 
 }
 
 .department-details-wrapper {
@@ -34,6 +44,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: transform 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.8);  
 }
 
 .department-logo:hover {
@@ -42,7 +53,7 @@
 
 .department-info {
   flex: 1;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.9);  
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -53,6 +64,7 @@
   color: #333;
   margin-bottom: 20px;
   text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);  
 }
 
 .section-tabs {
@@ -71,7 +83,6 @@
   font-size: 1rem;
   transition: background-color 0.3s ease;
 }
-
 
 .tab-button:hover {
   background-color: #d0d0d0;
@@ -112,6 +123,7 @@
   cursor: pointer;
   font-size: 1rem;
   transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .back-button:hover {
@@ -120,30 +132,33 @@
 
 .no-department {
   font-size: 1.2rem;
-  color: #666;
+  color: #fff;
   text-align: center;
   padding: 50px;
+  background-color: rgba(0, 0, 0, 0.7);  
+  border-radius: 10px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .loading {
   font-size: 1.2rem;
-  color: #333;
+  color: #fff;
   text-align: center;
   padding: 50px;
+  background-color: rgba(0, 0, 0, 0.7);  
+  border-radius: 10px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* Styles for achievements-list to create a 3x3 grid */
 .achievements-list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 20px; /* Space between grid items */
-  
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
-/* Style for each achievement item */
 .achievement-item {
   display: flex;
   flex-direction: column;
@@ -151,7 +166,6 @@
   text-align: center;
 }
 
-/* Style for achievement content */
 .achievement-content {
   display: flex;
   flex-direction: column;
@@ -159,41 +173,38 @@
   gap: 10px;
 }
 
-/* Style for achievement text */
 .achievement-content p {
   margin: 0;
   font-size: 16px;
   color: #333;
   font-weight: 500;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);  
 }
 
-/* Style for achievement images to make them circular */
 .achievement-image {
-  width: 200px; /* Fixed width for circular shape */
-  height: 200px; /* Fixed height for circular shape */
-  border-radius: 5%; /* Makes the image circular */
-  object-fit: cover; /* Ensures image fills the circle without distortion */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: transform 0.3s ease; /* Smooth hover effect */
-  cursor: pointer; /* Indicates the image is clickable */
+  width: 200px;
+  height: 200px;
+  border-radius: 5%;
+  object-fit: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);   
 }
 
-/* Hover effect for achievement images */
 .achievement-image:hover {
-  transform: scale(1.1); /* Slight zoom on hover */
+  transform: scale(1.1);
 }
 
-/* Styles for activities-list to create a 3x3 grid */
 .activities-list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 20px; /* Space between grid items */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
-/* Style for each activity item */
 .activity-item {
   display: flex;
   flex-direction: column;
@@ -201,7 +212,6 @@
   text-align: center;
 }
 
-/* Style for activity content */
 .activity-content {
   display: flex;
   flex-direction: column;
@@ -209,41 +219,38 @@
   gap: 10px;
 }
 
-/* Style for activity text */
 .activity-content p {
   margin: 0;
   font-size: 16px;
   color: #333;
   font-weight: 500;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); 
 }
 
-/* Style for activity images to make them circular */
 .activity-image {
-  width: 200px; /* Fixed width for circular shape */
-  height: 200px; /* Fixed height for circular shape */
-  border-radius: 5%; /* Makes the image circular */
-  object-fit: cover; /* Ensures image fills the circle without distortion */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: transform 0.3s ease; /* Smooth hover effect */
-  cursor: pointer; /* Indicates the image is clickable */
+  width: 200px;
+  height: 200px;
+  border-radius: 5%;
+  object-fit: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8); 
 }
 
-/* Hover effect for activity images */
 .activity-image:hover {
-  transform: scale(1.1); /* Slight zoom on hover */
+  transform: scale(1.1);
 }
 
-/* Styles for placements-list to create a 3x3 grid */
 .placements-list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 20px; /* Space between grid items */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
-/* Style for each placement item */
 .placement-item {
   display: flex;
   flex-direction: column;
@@ -251,7 +258,6 @@
   text-align: center;
 }
 
-/* Style for placement content */
 .placement-content {
   display: flex;
   flex-direction: column;
@@ -259,32 +265,30 @@
   gap: 10px;
 }
 
-/* Style for company name */
 .placement-content p {
   margin: 0;
   font-size: 16px;
   color: #333;
   font-weight: 500;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); 
 }
 
-/* Style for placement images to make them circular */
 .placement-image {
-  width: 100px; /* Fixed width for circular shape */
-  height: 100px; /* Fixed height for circular shape */
-  border-radius: 50%; /* Makes the image circular */
-  object-fit: cover; /* Ensures image fills the circle without distortion */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: transform 0.3s ease; /* Smooth hover effect */
-  cursor: pointer; /* Indicates the image is clickable */
+  width: 200px;
+  height: 50px;
+  border-radius: 10%;
+  object-fit: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8); 
 }
 
-/* Hover effect for placement images */
 .placement-image:hover {
-  transform: scale(1.1); /* Slight zoom on hover */
+  transform: scale(1.1);
 }
 
-/* Remove conflicting styles */
-department-logo,
+.department-logo,
 .placement-image,
 .activity-image,
 .achievement-image {
@@ -293,20 +297,18 @@ department-logo,
   display: block;
 }
 
-/* Ensure department-logo keeps its original size */
 .department-logo {
-  width: 250px; /* Matches .department-logo above */
+  width: 250px;
   height: 250px;
 }
 
-/* Modal for enlarged image */
 .image-modal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -348,7 +350,6 @@ department-logo,
   background-color: #e0e0e0;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .department-details-wrapper {
     flex-direction: column;
@@ -369,18 +370,17 @@ department-logo,
     width: 100%;
   }
 
-  /* Adjust achievements, placements, and activities grid for smaller screens */
   .achievements-list,
   .placements-list,
   .activities-list {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
 
   .achievement-image,
   .placement-image,
   .activity-image {
-    width: 80px; /* Smaller size for mobile */
+    width: 80px;
     height: 80px;
   }
 }
@@ -389,14 +389,14 @@ department-logo,
   .achievements-list,
   .placements-list,
   .activities-list {
-    grid-template-columns: 1fr; /* 1 column on very small screens */
+    grid-template-columns: 1fr;
     gap: 10px;
   }
 
   .achievement-image,
   .placement-image,
   .activity-image {
-    width: 60px; /* Even smaller for tiny screens */
+    width: 60px;
     height: 60px;
   }
 }
