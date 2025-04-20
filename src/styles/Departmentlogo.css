@@ -1,0 +1,48 @@
+
+.logo-wrapper {
+    position: relative;
+    width: 600px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .college-logo {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-left: -400px;
+    margin-top: -90px;
+    
+  }
+  
+  .college-logo:hover {
+    transform: scale(1.1);
+  }
+  
+  .dept-logos-circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .dept-logo {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    border: 3px solid #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .dept-logo:hover {
+    transform: scale(1.2);
+    z-index: 11;
+  }

@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Computer Science",
+    "logo": "/assets/1.png",
+    "details": {
+      "about": "The Computer Science department pioneers advancements in software development, artificial intelligence, and data science.",
+      "faculty": ["Dr. Sarah Johnson", "Prof. Michael Chen", "Dr. Emily Davis", "Prof. Raj Patel"],
+      "facilities": ["AI Research Lab", "Cloud Computing Center", "Cybersecurity Suite", "High-Performance Computing Cluster"],
+      "achievements": ["1st Place in National Hackathon 2024", "Published 12 papers in IEEE journals", "Developed open-source AI framework"],
+      "placements": ["98% placement rate", "Top recruiters: Google, Microsoft, Amazon", "Average package: $90,000"]
+    }
+  },
+  {
+    "id": 2,
+    "name": "Electronics Engineering",
+    "logo": "/assets/2.png",
+    "details": {
+      "about": "Specializing in circuit design, embedded systems, and telecommunications, driving innovation in hardware technology.",
+      "faculty": ["Dr. James Wilson", "Prof. Anita Sharma", "Dr. Thomas Lee"],
+      "facilities": ["VLSI Design Lab", "Robotics Workshop", "Signal Processing Lab"],
+      "achievements": ["Best Innovation Award at TechFest 2024", "3 patents filed in 2023", "Developed 5G antenna prototype"],
+      "placements": ["95% placement rate", "Top recruiters: Intel, Qualcomm, Texas Instruments", "Average package: $85,000"]
+    }
+  },
+  {
+    "id": 3,
+    "name": "Mechanical Engineering",
+    "logo": "/assets/3.png",
+    "details": {
+      "about": "Focused on advanced manufacturing, robotics, and sustainable energy solutions for modern industry challenges.",
+      "faculty": ["Prof. Laura Brown", "Dr. Vikram Singh", "Prof. David Kim"],
+      "facilities": ["CNC Machine Shop", "Thermal Engineering Lab", "3D Printing Studio"],
+      "achievements": ["Won ASME Design Challenge 2023", "Developed eco-friendly engine prototype", "Published 8 research papers"],
+      "placements": ["90% placement rate", "Top recruiters: Boeing, General Motors, Siemens", "Average package: $80,000"]
+    }
+  },
+  {
+    "id": 4,
+    "name": "Civil Engineering",
+    "logo": "/assets/4.png",
+    "details": {
+      "about": "Dedicated to sustainable infrastructure, urban planning, and advanced construction technologies.",
+      "faculty": ["Dr. Maria Gonzalez", "Prof. Ahmed Khan", "Dr. Lisa Wong"],
+      "facilities": ["Structural Testing Lab", "Geotechnical Research Center", "Hydraulics Lab"],
+      "achievements": ["Designed earthquake-resistant building model", "Won National Bridge Design Contest", "Consulted on 3 major city projects"],
+      "placements": ["88% placement rate", "Top recruiters: Larsen & Toubro, AECOM, Bechtel", "Average package: $75,000"]
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chemical Engineering",
+    "logo": "/assets/5.png",
+    "details": {
+      "about": "Advancing research in nanotechnology, biofuels, and chemical process optimization for a sustainable future.",
+      "faculty": ["Prof. Robert Taylor", "Dr. Priya Nair", "Prof. Susan Clark"],
+      "facilities": ["Biochemical Research Lab", "Process Simulation Suite", "Polymer Testing Lab"],
+      "achievements": ["Developed biodegradable plastic alternative", "Published 10 papers in Nature journals", "Won Green Chemistry Award 2024"],
+      "placements": ["92% placement rate", "Top recruiters: Dow Chemical, BASF, ExxonMobil", "Average package: $82,000"]
+    }
+  },
+  {
+    "id": 6,
+    "name": "Biotechnology",
+    "logo": "/assets/6.png",
+    "details": {
+      "about": "Leading innovations in genetic engineering, pharmaceuticals, and environmental biotechnology.",
+      "faculty": ["Dr. Olivia Martin", "Prof. Sanjay Gupta", "Dr. Emma Lewis"],
+      "facilities": ["Genomics Lab", "Bioinformatics Center", "Tissue Culture Facility"],
+      "achievements": ["Developed new vaccine delivery system", "Published 15 papers in biotech journals", "Won BioTech Innovator Award"],
+      "placements": ["90% placement rate", "Top recruiters: Pfizer, Novartis, Amgen", "Average package: $88,000"]
+    }
+  },
+  {
+    "id": 7,
+    "name": "Aerospace Engineering",
+    "logo": "/assets/7.png",
+    "details": {
+      "about": "Pushing boundaries in aircraft design, space exploration, and propulsion systems.",
+      "faculty": ["Prof. Daniel Wright", "Dr. Aisha Khan", "Prof. Mark Evans"],
+      "facilities": ["Wind Tunnel Lab", "Flight Simulation Center", "Propulsion Research Lab"],
+      "achievements": ["Designed micro-satellite prototype", "Won NASA Student Challenge 2023", "Published 7 papers in aerospace journals"],
+      "placements": ["93% placement rate", "Top recruiters: SpaceX, Lockheed Martin, Airbus", "Average package: $95,000"]
+    }
+  }
+]

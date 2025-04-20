@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion';
 import CollegeVideo from '../components/Collegevideo.jsx'; 
 import departments from '../data.json';
-
-
+import '../styles/Departmentlogo.css';
 
 import collegeLogo from '../assets/College_logo.webp';
 import fistLogo from '../assets/1.png';
@@ -13,12 +12,7 @@ import dept5Logo from '../assets/5.png';
 import dept6Logo from '../assets/6.png';
 import dept7Logo from '../assets/7.png';
 
-
-const center ={
-   '.assets/College_logo.webp': collegeLogo,
-};
 const logoMap = {
-  
   '/assets/1.png': fistLogo,
   '/assets/2.png': dept2Logo,
   '/assets/3.png': dept3Logo,
@@ -34,65 +28,41 @@ const DepartmentLogos = ({ onSelectDepartment }) => {
     visible: (i) => ({
       opacity: 1,
       scale: 1,
-      x: Math.cos((i * Math.PI) / 3.5) * 200,
-      y: Math.sin((i * Math.PI) / 3.5) * 200,
-      transition: { delay: i * 0.2, duration: 0.5 },
+      x: Math.cos((i * 2 * Math.PI) / departments.length) * 200,
+      y: Math.sin((i * 2 * Math.PI) / departments.length) * 200,
+      transition: { delay: i * 0.2, duration: 0.5, type: 'spring' },
     }),
   };
 
   return (
-    <div className="department-logos-container" >
-      
-     
+    <div className="department-logos-container">
       <CollegeVideo />
-     
       
-      <div style={{
-        position: 'absolute',
-        top: 0,
-        left: 0,  
-        zIndex: -1, 
-      }}></div>
-       <div> 
+      <div className="logo-wrapper">
+        <div className="college-logo-container">
           <img
-                     src={collegeLogo}
-                     alt="College Logo"
-                     style={{ maxWidth: '300px', width: '100%', position: 'relative', zIndex: -1 , cursor: 'pointer'}}
-                   />
-       </div>
-      
-      <div style={{ position: 'relative', zIndex: 1,  }}>
-        {departments.map((dept, index) => (
-
-          
-          <motion.img
-            key={dept.id}
-            src={logoMap[dept.logo] || dept.logo}
-            alt={dept.name}
-            className="dept-logo"
-            variants={logoVariants}
-            initial="hidden"
-            animate="visible"
-            custom={index}
-            onClick={() => onSelectDepartment(dept)}
-            style={{
-              width: '100px',
-              height: '100px',
-              position: 'absolute',
-              left:'20px',
-              top:'40px',
-              cursor: 'pointer',
-              
-              
-              
-              
-            }}
+            src={collegeLogo}
+            alt="College Logo"
+            className="college-logo"
           />
-          
-        ))}
+        </div>
+
+        <div className="dept-logos-circle">
+          {departments.map((dept, index) => (
+            <motion.img
+              key={dept.id}
+              src={logoMap[dept.logo] || dept.logo}
+              alt={dept.name}
+              className="dept-logo"
+              variants={logoVariants}
+              initial="hidden"
+              animate="visible"
+              custom={index}
+              onClick={() => onSelectDepartment(dept)}
+            />
+          ))}
+        </div>
       </div>
-      
-      
     </div>
   );
 };
