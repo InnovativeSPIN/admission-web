@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Computer Science",
-    "logo": "/assets/3.png",
+    "logo": "../assets/dept_logo/3.png",
     "about": "The Computer Science and Engineering department aims at nurturing a conducive upbringing for erudition and research by using appropriate computing technologies in its everyday activities. The department equips its students with technological expertise and skills in the field of computer science. Students at CSE are nurtured to become the best software professionals or entrepreneurs in their own innovative way.",
     "achievements": [
       {
@@ -58,7 +58,7 @@
   {
     "id": 2,
     "name": "Civil Engineering",
-    "logo": "/assets/5.png",
+    "logo": "../assets/dept_logo/5.png",
     "about": "The Civil Engineering department of NSCET has the state of art facilities equipped with latest instruments, equipment, and software for imparting technical knowledge on par with international requirements.",
     "achievements": [
       {
@@ -98,7 +98,7 @@
   {
     "id": 3,
     "name": "Electronics and Communication Engineering",
-    "logo": "/assets/7.png",
+    "logo": "../assets/dept_logo/7.png",
     "about": "The Electronics and Communication Engineering Department excels in circuit design, telecommunications, and embedded systems, driving advancements in connectivity and automation.",
     "achievements": [
       {
@@ -134,7 +134,7 @@
   {
     "id": 4,
     "name": "Electrical and Electronics Engineering",
-    "logo": "/assets/6.png",
+    "logo": "../assets/dept_logo/6.png",
     "about": "The Electrical and Electronics Engineering Department focuses on power systems, renewable energy, and control systems, equipping students for energy and automation industries.",
     "achievements": [
       {
@@ -170,7 +170,7 @@
   {
     "id": 5,
     "name": "Artificial Intelligence and Data Science",
-    "logo": "/assets/2.png",
+    "logo": "../assets/dept_logo/2.png",
     "about": "The Artificial Intelligence and Data Science Department pioneers machine learning, big data analytics, and AI-driven solutions, shaping the future of intelligent systems.",
     "achievements": [
       {
@@ -206,7 +206,7 @@
   {
     "id": 6,
     "name": "Information Technology",
-    "logo": "/assets/1.png",
+    "logo": "../assets/dept_logo/1.png",
     "about": "The Information Technology Department emphasizes software engineering, cybersecurity, and cloud computing, preparing students for dynamic IT careers.",
     "achievements": [
       {
@@ -242,7 +242,7 @@
   {
     "id": 7,
     "name": "Mechanical Engineering",
-    "logo": "/assets/4.png",
+    "logo": "../assets/dept_logo/4.png",
     "about": "The Mechanical Engineering Department focuses on design, manufacturing, and thermal systems, fostering innovation in automotive and aerospace industries.",
     "achievements": [
       {

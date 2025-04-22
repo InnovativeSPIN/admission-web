@@ -1,9 +1,5 @@
-:root {
-    --primary-bg: #1a1a2e;
-    --accent-color: #0ef;
-    --text-white: #fff;
-  }
-  
+
+  @import url('./common.css');
   body {
     margin: 0;
     /* background: var(--primary-bg); */

@@ -2,15 +2,14 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 import '../styles/Collegelogo.css';
-
-import collegeLogo from '../assets/College_logo.webp';
+import collegeLogo from '../assets/main/College_logo.webp';
 import collegeVideo from '../assets/drone/collegedrone.mp4';
 
 import infosysLogo from '../assets/front/infosys.png';
 import isoLogo from '../assets/front/iso.png';
 import isteLogo from '../assets/front/istelogo.webp';
 import naaclogo from '../assets/front/naac.png';
-import nptellogo from '../assets/front/nptel.jpg';
+import nptellogo from '../assets/front/nptel.png';
 
 const CollegeVideo = () => {
   return (
@@ -94,17 +93,20 @@ const CollegeLogo = ({ onClick }) => {
           }}
         >
           {/* Center College Logo */}
-          <img
+       <div className='college_logo'>
+       <img
             src={collegeLogo}
             alt="College Logo"
+
             style={{ maxWidth: '300px', width: '100%', position: 'relative', zIndex: 2 , cursor: 'pointer'}}
           />
+       </div>
 
           {/* Rotating Logos */}
           <div className="rotating-ring">
             {logos.map((logo, index) => {
               const angle = (360 / logos.length) * index;
-              const radius = 200;
+              const radius = 230;
               const x = radius * Math.cos((angle * Math.PI) / 180);
               const y = radius * Math.sin((angle * Math.PI) / 180);
 
@@ -118,6 +120,7 @@ const CollegeLogo = ({ onClick }) => {
     position: 'absolute',
     top: `calc(50% + ${y}px - 35px)`,
     left: `calc(50% + ${x}px - 35px)`,
+
   }}
 />
 

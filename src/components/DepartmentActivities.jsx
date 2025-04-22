@@ -8,7 +8,7 @@ import CollegeVideo from '../components/Collegevideo.jsx';
 const images = import.meta.glob('../assets/**/*.{png,jpg,jpeg}', { eager: true });
 const imageMap = {};
 for (const [path, module] of Object.entries(images)) {
-  const jsonPath = path.replace('../assets', '/assets');
+  const jsonPath = path.replace('../assets', '../assets');
   imageMap[jsonPath] = module.default;
 }
 
