@@ -4,7 +4,7 @@ on:
     branches:
       - main
     paths:
-      - web/** 
+      - web/**
 
 jobs:
   FTP-Deploy-Action:
@@ -15,10 +15,11 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: FTP Deploy Action
+      - name: FTP Deploy (only web/build folder)
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: web/**  
           dangerous-clean-slate: true
