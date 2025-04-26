@@ -3,8 +3,7 @@ on:
   push:
     branches:
       - main
-    paths:
-      - web/**
+
 
 jobs:
   FTP-Deploy-Action:
@@ -21,5 +20,4 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./web/**  
           dangerous-clean-slate: true
