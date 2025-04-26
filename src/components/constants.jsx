@@ -209,6 +209,23 @@ export const Departments = [
       ai_ds_3
     ],
     achievements: [
+
+      {
+        name: "Tech Spectrum’24 - 3rd Prize In Idea Nova",
+        img: tech_spectrum
+      },
+      {
+        name: 'won Smart India Hackathon 2023 - Maharashtra',
+        img: sih_2
+      },
+      {
+        name: 'Quantathon 2.0 X IBM Qiskit at SRM University',
+        img: srm
+      },
+      {
+        name: "Participation 36-hour Hackathon at Karur Kumarasamy College of Engineering",
+        img: karurCollege
+      },
       {
         name: "Bharathi Ula 2024 Speech Competition - (II-Prize)",
         img: bharathi_ula_2
@@ -217,19 +234,8 @@ export const Departments = [
         name: "Bharathi Ula 2024 Speech Competition - (III-Prize)",
         img: bharathi_ula_1
       },
-     
-      {
-        name: "Tech Spectrum’24 - 3rd Prize In Idea Nova",
-        img: tech_spectrum
-      }
-      , {
-        name: 'Quantathon 2.0 X IBM Qiskit at SRM University',
-        img: srm
-      },
-      {
-        name:"Participation 36-hour Hackathon at Karur Kumarasamy College of Engineering",
-        img:karurCollege
-      },
+
+
 
     ],
     activites: [
@@ -258,7 +264,7 @@ export const Departments = [
         name: "Seminar on “Mastering the Job Hunt: Interview Preparation for Professional Careers”",
         img: ai_ds_seminar
       },
-   
+
 
     ],
     faculties: [
@@ -333,7 +339,7 @@ export const Departments = [
         name: "Madurai Build Expo Visit",
         image: BuildExpo
       },
-      
+
       {
         name: "EYCA Inauguration",
         image: civil_association
@@ -346,7 +352,7 @@ export const Departments = [
         name: "Soil Stability Seminar",
         image: soilseminar
       },
-    
+
       {
         name: "GATE 2025 Blueprint",
         image: gate_blueprint
@@ -355,7 +361,7 @@ export const Departments = [
         name: "VAC - III Year: Structural Design",
         image: ""
       },
-      
+
       {
         name: "VAC - II Year: Drafting 2D & 3D",
         image: ""
@@ -450,8 +456,8 @@ export const Departments = [
         img: mukilan_12
       },
       {
-        name:"National Space Day-II Price",
-        img:space_day
+        name: "National Space Day-II Price",
+        img: space_day
       },
       {
         name: 'won Smart India Hackathon 2023 - Assam',
@@ -469,10 +475,10 @@ export const Departments = [
         name: 'Won NAAN Mudhalvan Hackathon 2025 (2 final-year teams)',
         img: ''
       }
-     
+
     ],
     activites: [
-     
+
       {
         name: "FIST Association Inauguration",
         img: fist_assoc
@@ -686,7 +692,7 @@ export const Departments = [
         "name": "One Day Workshop on Electrical CAD (E-CAD)",
         "image": e_cad
       },
-      
+
       {
         "name": "Five Days VAC on Modelling of Non-Conventional Energy Technology",
         "image": energy_tech
@@ -771,10 +777,6 @@ export const Departments = [
     ],
     achievements: [
       {
-        name: 'Quantathon 2.0 X IBM Qiskit at SRM University',
-        img: srm
-      },
-      {
         name: 'Participate Smart India Hackathon 2023 - Assam',
         img: sihassam
       },
@@ -782,6 +784,16 @@ export const Departments = [
         name: 'won Smart India Hackathon 2023 - Maharashtra',
         img: sih_2
       },
+      {
+        name: "Participation 36-hour Hackathon at Karur Kumarasamy College of Engineering",
+        img: karurCollege
+      },
+      {
+        name: 'Quantathon 2.0 X IBM Qiskit at SRM University',
+        img: srm
+      },
+
+
     ],
     activites: [
 
@@ -846,7 +858,7 @@ export const Departments = [
     logo: mech,
     description: 'Mechanical Engineering involves the design, analysis, and manufacturing of machines and mechanical systems. It combines physics, materials science, and mathematics to develop innovative solutions in automotive, aerospace, energy, and robotics.',
     association: mass,
-    introImage:[
+    introImage: [
       mech_1,
       mech_2,
       mech_3
