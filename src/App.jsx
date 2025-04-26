@@ -1,33 +1,31 @@
-import { useState } from 'react';
-import CollegeLogo from './components/CollegeLogo';
-import DepartmentLogos from './components/DepartmentLogos';
-import DepartmentActivities from './components/DepartmentActivities';
-import './styles/App.css';
-
-
-
+import React, { useState } from 'react';
+import IntroCollege from './components/IntroCollege';
+import DeptIntro from './components/DeptIntro';
+import Department from './components/Department';
 
 function App() {
-  const [view, setView] = useState('college');
+  const [goDept, setGoDept] = useState(false);
   const [selectedDepartment, setSelectedDepartment] = useState(null);
 
-  const handleLogoClick = () => setView('departments');
-  const handleSelectDepartment = (dept) => {
-    setSelectedDepartment(dept);
-    setView('activities');
+  const handleDepartmentSelect = (department) => {
+    setSelectedDepartment(department);
+    setGoDept(true); 
   };
-  const handleBack = () => setView('departments');
 
+  const handleBack = () => {
+    setGoDept(true); 
+    setSelectedDepartment(null)
+  };
   return (
-    <div className="app">
-      {view === 'college' && <CollegeLogo onClick={handleLogoClick} />}
-      {view === 'departments' && (
-        <DepartmentLogos onSelectDepartment={handleSelectDepartment} />
+    <>
+      {!goDept ? (
+        <IntroCollege onClick={() => setGoDept(true)} />
+      ) : selectedDepartment ? (
+        <Department department={selectedDepartment}  onBack={handleBack}/>
+      ) : (
+        <DeptIntro onSelectDepartment={handleDepartmentSelect} />
       )}
-      {view === 'activities' && (
-        <DepartmentActivities department={selectedDepartment} onBack={handleBack} />
-      )}
-    </div>
+    </>
   );
 }
 

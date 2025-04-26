@@ -1,0 +1,331 @@
+:root {
+
+
+  --text-white: #fff;
+  --primary-color: #1292e2;
+  --dark-color: #104565;
+  --light-bg_2: #10446568;
+  --secondary-color: #f6783a;
+  --light-bg: #ffffff86;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  
+}
+*{
+  outline: none ;
+}
+
+/* first intro  */
+.bg_video video {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  z-index: -4;
+}
+
+.center_section {
+  z-index: 1;
+
+}
+
+.college_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.college_logo img {
+  background: #ffffffce;
+  border: 2px solid var(--dark-color);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  transition: 0.4s;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.college_logo img:hover {
+  transform: scale(1.03);
+}
+
+.rotate_logos {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  background: var(--text-white);
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--dark-color);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+  transform: rotate(0deg);
+
+}
+
+.rotate_ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: rotateRing 20s linear infinite;
+  z-index: 1;
+
+}
+
+@keyframes rotateRing {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ------------------------------ */
+
+/* 2 intro */
+
+.bg_vide_2::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #10446534;
+  backdrop-filter: blur(2px);
+}
+
+.rotate_logos_2 {
+  width: 100px;
+  height: 100px;
+
+  cursor: pointer;
+}
+
+/* departent main section */
+.department_content_section {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 2rem;
+  padding: 20px;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.department_right {
+  height: 650px;
+  background: var(--light-bg_2);
+overflow: hidden;
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  border: 3px solid var(--primary-color);
+}
+
+.department_left {
+  overflow: hidden;
+  height: 650px;
+  background: var(--light-bg_2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  flex-basis: 30%;
+  border: 3px solid var(--primary-color);
+
+
+}
+
+.department_logo {
+  width: 240px;
+  border-radius: 50%;
+  margin-top: 20px;
+  border: 3px solid var(--primary-color);
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
+
+}
+
+.association_logo {
+  width: 180px;
+  filter: drop-shadow(2px 4px 4px rgba(255, 255, 255, 0.5));
+}
+
+.asso_text {
+  margin-top: 2.5rem;
+  text-transform: uppercase;
+  color: var(--text-white);
+  letter-spacing: 1px;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.4));
+
+}
+
+.association_title {
+  text-transform: uppercase;
+  color: var(--text-white);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.back_icon{
+  position: absolute;
+  left: 10px;
+  bottom: 5%;
+  color: var(--text-white);
+  border: 2px solid var(--primary-color);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: clamp(20px,2vw,22px);
+  background: var(--light-bg_2);
+}
+.dept_name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color);
+border-bottom: 2px solid var(--text-white);
+margin-bottom: 2rem;
+border-bottom-right-radius:20px ;
+border-bottom-left-radius:20px ;
+}
+.dept_name h2{
+  text-transform: uppercase;
+  color: var(--text-white);
+  letter-spacing: 2px;
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.4));
+}
+.top_bar_btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.top_bar_btns button{
+  padding: 2px 15px;
+  font-weight: bold;
+  font-size: clamp(18px,2vw,20px);
+  border: 3px solid var(--dark-color);
+  background: var(--primary-color);
+  color: var(--text-white);
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+/* content section */
+.content_section{
+  padding: 20px;
+}
+.content_section p{
+text-align: justify;
+color: var(--text-white);
+letter-spacing: 1px;
+font-size: clamp(18px,2vw,22px);
+}
+.intro_images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.intro_image{
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  margin-top: 2rem;
+  padding: 2px;
+  background: var(--text-white);
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.7);
+}
+.slider_img{
+  width: 380px;
+}
+.faculties_img{
+  width: 180px;
+}
+.content_slider{
+  max-width: 980px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+ margin-top: 2rem;
+ padding: 20px;
+ height: 100%;
+
+}
+.slider_img{
+  border-radius: 4px;
+  border: 4px solid var(--primary-color);
+ width: 100%;
+ height: 200px;
+ object-fit: cover;
+}
+.faculty_card img{
+  width: 280px;
+  height: 280px;
+}
+.faculty_card{
+  width: 280px;
+  height: 400px;
+}
+
+.main_card{
+  background: var(--text-white);
+  width: 380px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  padding: 20px;
+  border-radius: 6px;
+  border:3px solid var(--primary-color);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.main_card p {
+  font-size: clamp(18px,2vw,20px);
+  color: var(--dark-color);
+  letter-spacing: 1px;
+}
+.faculty_card img{
+  width: 230px;
+  object-fit: cover;
+  border: 2px solid var(--primary-color);
+}
+.faculty_card {
+  background: var(--light-bg_2);
+  display: flex;
+  flex-direction: column;
+align-items: center;
+border:2px solid var(--text-white);
+border-radius: 5px;
+padding: 10px;
+}
+.faculty_card_text{
+  color: var(--text-white);
+  text-align: center;
+}
