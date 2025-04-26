@@ -1,6 +1,6 @@
 <?php
 
-header('Location: /web');
+header('Location: ./web');
 exit;
 
 ?>
