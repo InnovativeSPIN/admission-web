@@ -3,8 +3,8 @@ on:
   push:
     branches:
       - main
-    paths-ignore:
-      - src/**
+    paths:
+      - web/**  # Trigger on changes ONLY inside web/
 
 
 jobs:
@@ -22,4 +22,5 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./web 
           dangerous-clean-slate: true
