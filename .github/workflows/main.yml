@@ -3,8 +3,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - web/**  # Trigger on changes ONLY inside web/
 
 
 jobs:
@@ -16,11 +14,13 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: FTP Deploy (only web/build folder)
+      - name: FTP Deploy (only web folder, excluding index.tml and src)
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./web 
+          exclude: |
+            **/index.tml
+            **/src/**
           dangerous-clean-slate: true
