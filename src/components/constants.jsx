@@ -35,6 +35,8 @@ import fist_assoc from '../assets/cse/fist_assoc.jpeg'
 import webinar_it from '../assets/cse/webinar_it_people.jpeg'
 import ivspectrum from '../assets/cse/IV.jpeg'
 import vaccse from '../assets/cse/VAC.jpeg'
+import tn_skills from "../assets/college/tn_skills.jpeg"
+import kalam_young from "../assets/college/kalam_young.jpg"
 
 // ai&ds images
 import ai_ds_1 from '../assets/ai_ds/ai_ds_1.jpeg'
@@ -202,7 +204,7 @@ export const Departments = [
     description: "The AI & DS department specializes in Artificial Intelligence and Data Science, equipping students with skills in machine learning, data analytics, and intelligent systems to solve complex, real-world problems efficiently.",
     logo: ai_ds,
     association: aim,
-    associationName: 'Association of Intelligence Minds',
+    associationName: 'Association of Intelligent Minds',
     introImage: [
       ai_ds_1,
       ai_ds_2,
@@ -455,6 +457,14 @@ export const Departments = [
         name: 'S. Mukilan placed at WiserStack with ₹1L/month package',
         img: mukilan_12
       },
+        {
+              name:"Skill India Award - 2nd Place",
+              img:tn_skills
+          },
+          {
+              name:"Kalam Young Achiever Awards - 24",
+              img:kalam_young
+          },
       {
         name: "National Space Day-II Price",
         img: space_day

@@ -50,22 +50,29 @@ const IntroCollege = ({ onClick }) => {
               const y = radius * Math.sin((angle * Math.PI) / 180);
 
               return (
+                <figure key={index}
+                >
                 <img
-                  key={index}
                   src={logo.url}
                   alt={`Partner logo ${index}`}
-                  className="rotate_logos"
-                  style={{
+                  className="rotate_logos dept_rotate_logos" style={{
                     position: 'absolute',
-                    top: `calc(50% + ${y}px - 35px)`,
-                    left: `calc(50% + ${x}px - 35px)`,
+                    top: `calc(50% + ${y}px - 50px)`,
+                    left: `calc(50% + ${x}px - 50px)`,
                   }}
+                 
                 />
+
+                </figure>
+
               );
+             
             })}
           </div>
         </motion.div>
+        
       )}
+  
     </>
   );
 };

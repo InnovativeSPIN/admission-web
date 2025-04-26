@@ -3,8 +3,10 @@ import { motion } from 'framer-motion';
 import collegeVideo from '../assets/main/collegedrone.mp4';
 import college_logo from '../assets/main/college_logo.webp';
 import { CollegeLogos, Departments } from './constants';
+import { IoArrowBack } from "react-icons/io5";
 
-const DepartIntro = ({ onClick, onSelectDepartment }) => {
+
+const DepartIntro = ({ onClick, onSelectDepartment,onBack }) => {
   const [showDept, setShowDept] = useState(true);
   const radius = 230;
 
@@ -74,8 +76,12 @@ const DepartIntro = ({ onClick, onSelectDepartment }) => {
               );
             })}
           </div>
+
         </div>
       )}
+       <div className="back_icon" onClick={onBack}>
+              <IoArrowBack />
+            </div>
     </>
   );
 };
