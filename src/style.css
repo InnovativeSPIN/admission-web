@@ -372,7 +372,7 @@ body {
   max-width: 1350px;
   margin: 0 auto;
   background: var(--light-bg_2);
-  height: 650px;
+  height: 600px;
   border: 2px solid var(--primary-color);
   border-radius: 10px;
   display: flex;
@@ -421,7 +421,7 @@ body {
   width: 380px;
   overflow: hidden;
   color: var(--text-white);
-  height: 340px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -459,7 +459,7 @@ body {
 .placement_card img {
   width: 100%;
   object-fit: contain;
-  height: 380px;
+  height: 330px;
 }
 
 .placement_card {
