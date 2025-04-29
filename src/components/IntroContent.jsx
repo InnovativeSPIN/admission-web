@@ -8,6 +8,9 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import {memorialEvents,placements,culturals,Sports,dept} from "./constantsIntro"
+import college_logo from '../assets/main/college_logo_white.png';
+import kamarajar_logo from '../assets/main/kamarajar_logo.webp';
+
 
 const IntroContent = ({ onBack }) => {
     const [activeSection, setActiveSection] = useState('events');
@@ -23,6 +26,12 @@ const IntroContent = ({ onBack }) => {
       <section className="main_intro">
       
         <div className='main_intro_content'>
+        <div className="college_logo_content">
+          <img src={college_logo} alt="" />
+        </div>
+        <div className="tmhnu_logo_content">
+          <img src={kamarajar_logo} alt="" />
+        </div>
             <div className="main_intro_top">
             {
               activeSection === "events" && (

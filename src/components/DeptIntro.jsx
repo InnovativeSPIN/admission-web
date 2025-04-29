@@ -55,7 +55,7 @@ const DepartIntro = ({ onClick, onSelectDepartment,onBack }) => {
           </div>
           <div className="rotate_ring_2">
             {Departments.map((dept, index) => {
-              const angle = (2 * Math.PI * index) / 250;
+              const angle = (2 * Math.PI * index) / 280;
               const x = radius * Math.cos(angle);
               const y = radius * Math.sin(angle);
 

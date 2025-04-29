@@ -70,8 +70,8 @@ padding: 2px 10px;
 
 .rotate_logos {
   position: absolute;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height:100px;
   object-fit: cover;
   background: var(--text-white);
   padding: 10px;
@@ -479,4 +479,24 @@ padding: 2px 10px;
   border: 3px solid var(--dark-color);
   border-radius: 5px;
 box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+.college_logo_content{
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+.college_logo_content img{
+  width: 160px;
+
+  height: 90px;
+  object-fit: cover;
+}
+  .tmhnu_logo_content img{
+    width: 110px;
+  }
+
+.tmhnu_logo_content{
+  position: absolute;
+  right: 0;
+  top: 10px;
 }

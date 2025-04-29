@@ -51,8 +51,8 @@ const IntroCollege = ({ onClick }) => {
           <div className="rotate_ring">
             {CollegeLogos.map((logo, index) => {
               const angle = (360 / CollegeLogos.length) * index;
-              const x = radius * Math.cos((angle * Math.PI) / 180);
-              const y = radius * Math.sin((angle * Math.PI) / 180);
+              const x = radius * Math.cos((angle * Math.PI) / 240);
+              const y = radius * Math.sin((angle * Math.PI) / 240);
 
               return (
                 <figure key={index}
