@@ -61,7 +61,7 @@ const Department = ({ department, onBack }) => {
     }
     </p>
     <div className='intro_images'>
-      {department.introImage?.map((img, id) => (
+      {department.introimg?.map((img, id) => (
         <img key={id} src={img} alt={`Intro ${id + 1}`} className="intro_image" />
       ))}
     </div>
@@ -149,8 +149,8 @@ const Department = ({ department, onBack }) => {
     {department.faculties?.map((con, id) => (
       <SwiperSlide key={id}>
         <div className="faculty_card ">
-          {con.image && (
-            <img src={con.image} alt={`faculties ${id + 1}`} className="faculties_img slider_img" />
+          {con.img && (
+            <img src={con.img} alt={`faculties ${id + 1}`} className="faculties_img slider_img" />
           )}
          <div className='faculty_card_text'>
          <p className=" card_text">{con.name}</p>

@@ -7,7 +7,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import {memorialEvents,placements,culturals,Sports} from "./constantsIntro"
+import {memorialEvents,placements,culturals,Sports,dept} from "./constantsIntro"
 
 const IntroContent = ({ onBack }) => {
     const [activeSection, setActiveSection] = useState('events');
@@ -19,6 +19,7 @@ const IntroContent = ({ onBack }) => {
           Your browser does not support the video tag.
         </video>
       </div>
+
       <section className="main_intro">
       
         <div className='main_intro_content'>
@@ -44,6 +45,42 @@ const IntroContent = ({ onBack }) => {
                }}
              >
                {memorialEvents.map((con, id) => (
+                 <SwiperSlide key={id}>
+                   <div className="college_achievement_card ">
+                     {con.img && (
+                       <img src={con.img} alt={`college_Achievement ${id + 1}`} className="college_achievement_img slider_img" />
+                     )}
+                     <p className="college_achievement_text">{con.name}</p>
+                   </div>
+                 </SwiperSlide>
+               ))}
+             </Swiper>
+             </>
+              )
+
+              
+            }
+            {
+              activeSection === "dept" && (
+                <>
+                <div className='intro_content_head'>
+          <h2>
+          Science and Humanities
+          </h2>
+        </div>
+           <Swiper
+               modules={[Navigation, Pagination, Autoplay]}
+               spaceBetween={20}
+               slidesPerView={1}
+               autoplay={{ delay: 3000 }}
+               loop={true}
+               breakpoints={{
+                 640: { slidesPerView: 1 },
+                 768: { slidesPerView: 2 },
+                 1024: { slidesPerView: 3 },
+               }}
+             >
+               {dept.map((con, id) => (
                  <SwiperSlide key={id}>
                    <div className="college_achievement_card ">
                      {con.img && (

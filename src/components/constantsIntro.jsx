@@ -5,6 +5,7 @@ import tn_skills from "../assets/college/tn_skills.jpeg"
 import kalam_young from "../assets/college/kalam_young.jpg"
 import wg_tech from "../assets/college/wg_tech.JPG"
 import science_expo from "../assets/college/science_expo.JPG"
+
 // placements
 import placement1 from "../assets/placement/placement (1).png";
 import placement2 from "../assets/placement/placement (2).png";
@@ -42,6 +43,14 @@ import boxingmen from "../assets/sports/boxingmen.jpg"
 import ballbad from "../assets/sports/ballbad.jpeg"
 import basketball from "../assets/sports/basketball.jpeg"
 import Volleyballmen from "../assets/sports/Volleyballmen.jpg"
+
+
+// s&h department
+import associationsandh from "../assets/s_and_h/7thsense.jpg"
+import iv1year from "../assets/s_and_h/iv.jpeg"
+import merayuva from "../assets/s_and_h/merayuva.jpeg"
+import healthyfit from "../assets/s_and_h/healthyfit.jpeg"
+import kfc from "../assets/s_and_h/kfc.jpg"
 
 
 export const placements = [
@@ -153,3 +162,30 @@ export const Sports = [
   },
 
 ]
+
+
+export const dept=[
+  {
+    name: "Fresher’s Day",
+    img: freshers
+  },
+  {
+    name:"7th Sense Association Inauguration",
+    img:associationsandh
+  },{
+    name:"Idustrial Visit to Kodaikanal ",
+    img:iv1year
+  },
+  {
+    name:"Nehru Yuva Kendra-Mera Yuva Bharat",
+    img:merayuva
+  },{
+    name:"Healthy Fitness Program",
+    img:healthyfit
+  },
+  {
+    name:"Knowledge Feast Contest KFC",
+    img:kfc
+  },
+
+] 

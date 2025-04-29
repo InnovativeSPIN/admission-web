@@ -30,6 +30,11 @@ const DepartIntro = ({ onClick, onSelectDepartment,onBack }) => {
         </video>
       </div>
 
+      <div className="Counselling_code">
+        <h2>
+        Counselling code : 5865
+        </h2>
+      </div>
       {showDept && (
         <div
           initial={{ opacity: 0, scale: 0.5 }}

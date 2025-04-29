@@ -32,7 +32,19 @@ body {
   z-index: 1;
 
 }
+.Counselling_code{
+  position: fixed;
+right: 5%;
+bottom: 5%;
 
+}
+.Counselling_code h2{
+  background: var(--primary-color);
+border-radius: 5px;
+border: 1px solid var(--light-bg_2);
+color: var(--text-white);
+padding: 2px 10px;
+}
 .college_logo {
   display: flex;
   justify-content: center;

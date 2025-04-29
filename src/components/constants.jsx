@@ -22,7 +22,7 @@ import eee_assoc from '../assets/logo/asso_logo/eee.png'
 import eyca from '../assets/logo/asso_logo/civil.png'
 import mass from '../assets/logo/asso_logo/mech.png'
 
-// cse images
+// cse imgs
 import cse_1 from "../assets/cse/cse_1.jpg"
 import cse_2 from "../assets/cse/cse_2.jpg"
 import cse_3 from "../assets/cse/cse_3.jpg"
@@ -38,7 +38,7 @@ import vaccse from '../assets/cse/VAC.jpeg'
 import tn_skills from "../assets/college/tn_skills.jpeg"
 import kalam_young from "../assets/college/kalam_young.jpg"
 
-// ai&ds images
+// ai&ds imgs
 import ai_ds_1 from '../assets/ai_ds/ai_ds_1.jpeg'
 import ai_ds_2 from '../assets/ai_ds/ai_ds_2.webp'
 import ai_ds_3 from '../assets/ai_ds/ai_ds_3.jpg'
@@ -54,7 +54,7 @@ import transport_app from "../assets/ai_ds/transport_app.png"
 import vac from "../assets/ai_ds/VAC.jpeg"
 import ai_ds_seminar from "../assets/ai_ds/seminar.jpeg"
 
-// civil images
+// civil imgs
 import civil_1 from "../assets/civil/ciivl_1.jpg"
 import civil_2 from "../assets/civil/civil_2.jpeg"
 import civil_3 from "../assets/civil/civil_3.webp"
@@ -68,7 +68,7 @@ import soilseminar from "../assets/civil/soilstablity.jpeg"
 import civiliv from "../assets/civil/civiiv.jpeg"
 import biodiversity from "../assets/civil/biodiversity.JPG"
 
-// ece images
+// ece imgs
 import ece_1 from "../assets/ece/ece_1.jpg"
 import ece_2 from "../assets/ece/ece_2.png"
 import ece_3 from "../assets/ece/ece_3.webp"
@@ -81,7 +81,7 @@ import PCB_Design from "../assets/ece/PCB Design.jpeg"
 import WirelessCommunication from "../assets/ece/WirelessCommunication.jpeg"
 import FPGABoard from "../assets/ece/FPGABoard.jpeg"
 
-// eee images
+// eee imgs
 import eee_1 from "../assets/eee/eee_1.jpg"
 import eee_2 from "../assets/eee/eee_2.jpg"
 import eee_3 from "../assets/eee/eee_3.webp"
@@ -93,12 +93,12 @@ import energy_tech from "../assets/eee/energy_technology.jpeg"
 import substation_iv from "../assets/eee/fieldVisit.jpeg"
 import power_system from "../assets/eee/Power_System.jpeg"
 
-// it images
+// it imgs
 import it_1 from "../assets/it/it_1.jpeg"
 import it_2 from "../assets/it/it_2.jpg"
 import it_3 from "../assets/it/it_3.jpg"
 
-// mech images
+// mech imgs
 import mech_1 from "../assets/mech/mech_1.jpg"
 import mech_2 from "../assets/mech/mech_2.png"
 import mech_3 from "../assets/mech/mech_3.png"
@@ -107,7 +107,7 @@ import iv_sail from "../assets/mech/iv_SAIL.jpeg"
 import Printing_3d from "../assets/mech/3D_Printing.jpeg"
 import AutoDesk_Fusion from "../assets/mech/AutoDesk_Fusion.jpeg"
 
-// cse staff image
+// cse staff img
 import mathalai from "../assets/staff/cse/mathalairaj.jpg"
 import prathap from "../assets/staff/s-and-h/prathap.jpg"
 import udhaya from "../assets/staff/cse/udhayakumar.jpg"
@@ -130,7 +130,7 @@ import nathirunsabinash from "../assets/staff/civil/nathirunsabinash.jpg";
 import hariprasath from "../assets/staff/civil/68060bc69f1b8_hariprasath.jpg";
 
 
-// ai&ds Staff Image
+// ai&ds Staff img
 import vignesh from "../assets/staff/ai_ds/vignesh.jpg";
 import archana from "../assets/staff/ai_ds/archana.jpg";
 import vinothkumar from "../assets/staff/ai_ds/vinothkumar.jpg";
@@ -139,45 +139,45 @@ import jenifer from "../assets/staff/ai_ds/Jenifer Briscilla.png";
 import geerthiga from "../assets/staff/ai_ds/68060bda58c98_Geerthiga.jpg";
 
 // ece staff
-import venishkumarImage from '../assets/staff/ece/venishkumar.jpg';
-import mathavanImage from '../assets/staff/ece/Mathavan.jpg';
-import idhayachandranImage from '../assets/staff/ece/idhayachandran.jpg';
-import prathapImage from '../assets/staff/ece/prathap.jpg';
-import pradeepkumarImage from '../assets/staff/ece/pradeepkumar.jpg';
-import tamilselviImage from '../assets/staff/ece/tamilselvi.jpg';
-import shanthadeviImage from '../assets/staff/ece/shanthadevi.jpg';
-import kalaivaniImage from '../assets/staff/ece/kalaivani.jpg';
-import gowthamiImage from '../assets/staff/ece/gowthami.jpg';
+import venishkumarimg from '../assets/staff/ece/venishkumar.jpg';
+import mathavanimg from '../assets/staff/ece/Mathavan.jpg';
+import idhayachandranimg from '../assets/staff/ece/idhayachandran.jpg';
+import prathapimg from '../assets/staff/ece/prathap.jpg';
+import pradeepkumarimg from '../assets/staff/ece/pradeepkumar.jpg';
+import tamilselviimg from '../assets/staff/ece/tamilselvi.jpg';
+import shanthadeviimg from '../assets/staff/ece/shanthadevi.jpg';
+import kalaivaniimg from '../assets/staff/ece/kalaivani.jpg';
+import gowthamiimg from '../assets/staff/ece/gowthami.jpg';
 
 // eee staff
-import athilingamImage from '../assets/staff/eee/Dr_athilingam.jpg';
-import ganeshImage from '../assets/staff/eee/ganesh.jpg';
-import rajaKarthickImage from '../assets/staff/eee/raja_karthick.jpg';
-import nishethaImage from '../assets/staff/eee/Nishetha_jeflin_nixon.jpg';
-import vijayalakshmiImage from '../assets/staff/eee/Vijayalakshmi.jpg';
-import bharathiKannanImage from '../assets/staff/ece/bharathikannan.jpg';
-import shivaImage from '../assets/staff/eee/shiva.jpg';
-import abiramiImage from '../assets/staff/eee/Abirami.jpg';
-import monicaDhanaRanjiniImage from '../assets/staff/ece/monicadhanaranjani.jpg';
+import athilingamimg from '../assets/staff/eee/Dr_athilingam.jpg';
+import ganeshimg from '../assets/staff/eee/ganesh.jpg';
+import rajaKarthickimg from '../assets/staff/eee/raja_karthick.jpg';
+import nishethaimg from '../assets/staff/eee/Nishetha_jeflin_nixon.jpg';
+import vijayalakshmiimg from '../assets/staff/eee/Vijayalakshmi.jpg';
+import bharathiKannanimg from '../assets/staff/ece/bharathikannan.jpg';
+import shivaimg from '../assets/staff/eee/shiva.jpg';
+import abiramiimg from '../assets/staff/eee/Abirami.jpg';
+import monicaDhanaRanjiniimg from '../assets/staff/ece/monicadhanaranjani.jpg';
 
 
 // it staff
-import sathyaImage from '../assets/staff/it/6805f9f3b1cd0_sathya.jpeg';
-import sangeethaImage from '../assets/staff/it/sangeetha.jpg';
-import kanimoliImage from '../assets/staff/it/kanimoli.jpg';
-import keerthanaImage from '../assets/staff/it/Keerthana.jpg';
-import saiSuganyaImage from '../assets/staff/it/68060d94a3a65_sai suganya.jpg';
+import sathyaimg from '../assets/staff/it/6805f9f3b1cd0_sathya.jpeg';
+import sangeethaimg from '../assets/staff/it/sangeetha.jpg';
+import kanimoliimg from '../assets/staff/it/kanimoli.jpg';
+import keerthanaimg from '../assets/staff/it/Keerthana.jpg';
+import saiSuganyaimg from '../assets/staff/it/68060d94a3a65_sai suganya.jpg';
 
 // mech staff
-import radhakrishnanImage from '../assets/staff/mech/radhakrishnan.jpg';
-import vembathurajeshImage from '../assets/staff/mech/vembathurajesh.png';
-import santhaseelanImage from '../assets/staff/mech/santhaseelan.jpg';
-import thirumalairajImage from '../assets/staff/mech/Thirumalairaj.jpg';
-import sivaganesanImage from '../assets/staff/mech/sivaganesan.jpg';
-import nagarajanImage from '../assets/staff/mech/nagarajan.jpg';
-import surulimaniImage from '../assets/staff/mech/Surulimani.jpg';
-import harikishoreImage from '../assets/staff/mech/harikishore.jpg';
-import vennimalairajanImage from '../assets/staff/mech/Vennimalairajan.jpg';
+import radhakrishnanimg from '../assets/staff/mech/radhakrishnan.jpg';
+import vembathurajeshimg from '../assets/staff/mech/vembathurajesh.png';
+import santhaseelanimg from '../assets/staff/mech/santhaseelan.jpg';
+import thirumalairajimg from '../assets/staff/mech/Thirumalairaj.jpg';
+import sivaganesanimg from '../assets/staff/mech/sivaganesan.jpg';
+import nagarajanimg from '../assets/staff/mech/nagarajan.jpg';
+import surulimaniimg from '../assets/staff/mech/Surulimani.jpg';
+import harikishoreimg from '../assets/staff/mech/harikishore.jpg';
+import vennimalairajanimg from '../assets/staff/mech/Vennimalairajan.jpg';
 
 
 export const CollegeLogos = [
@@ -205,7 +205,7 @@ export const Departments = [
     logo: ai_ds,
     association: aim,
     associationName: 'Association of Intelligent Minds',
-    introImage: [
+    introimg: [
       ai_ds_1,
       ai_ds_2,
       ai_ds_3
@@ -273,37 +273,37 @@ export const Departments = [
       {
         name: "Mr. L.S. Vignesh",
         qualification: "M.E., (Ph.D)",
-        image: vignesh,
+        img: vignesh,
         position: "Assistant Professor & Head [I/C]"
       },
       {
         name: "Mrs. R. Archana",
         qualification: "M.E., (Ph.D)",
-        image: archana,
+        img: archana,
         position: "Assistant Professor"
       },
       {
         name: "Mr. J. Vinoth Kumar",
         qualification: "M.E., (Ph.D)",
-        image: vinothkumar,
+        img: vinothkumar,
         position: "Assistant Professor"
       },
       {
         name: "Ms. S. Abirami Kayathiri",
         qualification: "M.E.",
-        image: abirami,
+        img: abirami,
         position: "Assistant Professor"
       },
       {
         name: "Mrs. S. Jenifer Briscilla",
         qualification: "M.E.",
-        image: jenifer,
+        img: jenifer,
         position: "Assistant Professor"
       },
       {
         name: "Mrs. G. Geerthiga",
         qualification: "M.E.",
-        image: geerthiga,
+        img: geerthiga,
         position: "Assistant Professor"
       }
     ]
@@ -317,7 +317,7 @@ export const Departments = [
     description: "The Civil Engineering Department equips students with practical skills in design, construction, and sustainability, fostering innovation through hands-on training, real-world projects, and modern lab facilities.",
     association: eyca,
     associationName: 'Energy Young Civil Association',
-    introImage: [
+    introimg: [
       civil_1,
       civil_2,
       civil_3
@@ -325,116 +325,116 @@ export const Departments = [
     achievements: [
       {
         name: "3 Days Boot Camp for EDII’s Hackathon 2023-24",
-        image: EDIIHackathon
+        img: EDIIHackathon
       },
       {
         name: "State Level Technical Symposium (CIVICTURE 2K25) – Innovation Showcase – IInd Prize",
-        image: civiture_1
+        img: civiture_1
       },
       {
         name: "State Level Technical Symposium (CIVICTURE 2K25) – Sensory Bites-Enact – IInd Prize",
-        image: civiture_2
+        img: civiture_2
       }
     ],
     activites: [
       {
         name: "Madurai Build Expo Visit",
-        image: BuildExpo
+        img: BuildExpo
       },
 
       {
         name: "EYCA Inauguration",
-        image: civil_association
+        img: civil_association
       },
       {
         name: "IV Year Kochi Industrial Visit",
-        image: civiliv
+        img: civiliv
       },
       {
         name: "Soil Stability Seminar",
-        image: soilseminar
+        img: soilseminar
       },
 
       {
         name: "GATE 2025 Blueprint",
-        image: gate_blueprint
+        img: gate_blueprint
       },
-      {
-        name: "VAC - III Year: Structural Design",
-        image: ""
-      },
+      // {
+      //   name: "VAC - III Year: Structural Design",
+      //   img: ""
+      // },
 
-      {
-        name: "VAC - II Year: Drafting 2D & 3D",
-        image: ""
-      },
+      // {
+      //   name: "VAC - II Year: Drafting 2D & 3D",
+      //   img: ""
+      // },
       {
         name: "Biodiversity & Conservation Seminar",
-        image: biodiversity
+        img: biodiversity
       },
-      {
-        name: "VAC - IV Year: Technical Upskilling",
-        image: ""
-      },
-      {
-        name: "Steel Structures Seminar",
-        image: ""
-      }
+      // {
+      //   name: "VAC - IV Year: Technical Upskilling",
+      //   img: ""
+      // },
+      // {
+      //   name: "Steel Structures Seminar",
+      //   img: ""
+      // }
     ],
     faculties: [
       {
         name: "Mr. N. Nagarathinam",
         qualification: "M. E., M. I. S. T. E., (Ph. D)",
         position: "Assistant Professor & Head [I/C]",
-        image: nagarathinam
+        img: nagarathinam
       },
       {
         name: "Mrs. S. Gayathri",
         qualification: "M. E., M. I. S. T. E.",
         position: "Assistant Professor",
-        image: gayathri
+        img: gayathri
       },
       {
         name: "Mr. R. Shanmugapriyan",
         qualification: "M. E",
         position: "Assistant Professor",
-        image: shanmugapriyan
+        img: shanmugapriyan
       },
       {
         name: "Mrs. M. Sindhu",
         qualification: "M. E., (Ph.D)",
         position: "Assistant Professor",
-        image: sindhu
+        img: sindhu
       },
       {
         name: "Mrs. B. Sowmiya",
         qualification: "M.E",
         position: "Assistant Professor",
-        image: sowmiya
+        img: sowmiya
       },
       {
         name: "Mrs. M. Kanimozhi",
         qualification: "M. E",
         position: "Assistant Professor",
-        image: kanimozhi
+        img: kanimozhi
       },
       {
         name: "Mr. P. Arul Jebaraj",
         qualification: "M Tech",
         position: "Assistant Professor",
-        image: aruljebaraj
+        img: aruljebaraj
       },
       {
         name: "Mrs. R. Nathirun Sabinash",
         qualification: "M. E",
         position: "Assistant Professor",
-        image: nathirunsabinash
+        img: nathirunsabinash
       },
       {
         name: "Mr. T. Hariprasath",
         qualification: "M. E",
         position: "Assistant Professor",
-        image: hariprasath
+        img: hariprasath
       }
     ]
 
@@ -447,7 +447,7 @@ export const Departments = [
     logo: cse,
     association: fist,
     associationName: 'Fraternity of Immortal Software Technocrats',
-    introImage: [
+    introimg: [
       cse_1,
       cse_2,
       cse_3
@@ -510,55 +510,55 @@ export const Departments = [
       {
         name: "Dr. J. Mathalai Raj",
         qualification: "M.E (CSE), Ph.D",
-        image: mathalai,
+        img: mathalai,
         position: "Assistant Professor & Head [I/C]"
       },
       {
         name: "Mr. C. Prathap",
         qualification: "M.Tech., (Ph.D)",
-        image: prathap,
+        img: prathap,
         position: "Assistant Professor & Head [I/C] / S&H"
       },
       {
         name: "Mr. R. Udhaya Kumar",
         qualification: "M.E (CSE), MBA (ITM), (Ph.D)",
-        image: udhaya,
+        img: udhaya,
         position: "Assistant Professor"
       },
       {
         name: "Mrs. S. Arul Jothi",
         qualification: "M.E., (Ph.D)",
-        image: arul,
+        img: arul,
         position: "Assistant Professor"
       },
       {
         name: "Mrs. R. Keerthana",
         qualification: "M.E., (Ph.D)",
-        image: keerthana,
+        img: keerthana,
         position: "Assistant Professor"
       },
       {
         name: "Mr. J. Ayyanaprabu",
         qualification: "M.E., (Ph.D)",
-        image: ayyanaprabhu,
+        img: ayyanaprabhu,
         position: "Assistant Professor"
       },
       {
         name: "Mrs. K. Deepiga",
         qualification: null,
-        image: deepika,
+        img: deepika,
         position: "Assistant Professor"
       },
       {
         name: "Mr. N. Kesavamoorthy",
         qualification: "M.E (CSE)",
-        image: kesavamoorthy,
+        img: kesavamoorthy,
         position: "Assistant Professor"
       },
       {
         name: "Mrs. P. Niranjana",
         qualification: "M.Tech (CSE)",
-        image: niranjana,
+        img: niranjana,
         position: "Assistant Professor"
       }
     ]
@@ -571,7 +571,7 @@ export const Departments = [
     description: "Electronics and Communication Engineering (ECE) involves designing, developing, and testing electronic devices, circuits, and communication systems. It bridges hardware and software to enable advanced communication, automation, and signal processing solutions.",
     association: echelonz,
     associationName: 'ECHELONZ',
-    introImage: [
+    introimg: [
       ece_1,
       ece_2,
       ece_3
@@ -579,92 +579,92 @@ export const Departments = [
     achievements: [
       {
         "name": "Women’s Day Celebration - Tableau (II Prize)",
-        "image": Tableau
+        img: Tableau
       },
       {
         "name": "Rangoli - Ist Prize , III Prize",
-        "image": rangoli
+        img: rangoli
       },
       {
         "name": "Hackathon - III Prize (Kalasalingam)",
-        "image": Kalasalingam
+        img: Kalasalingam
       },
       {
         "name": "Euphoria 2K25 - 2nd Position",
-        "image": Euphoria2k25
+        img: Euphoria2k25
       },
       {
         "name": "Hackathon - I Prize (VHNSN College)",
-        "image": vhnsn
+        img: vhnsn
       },
     ],
     activites: [
       {
         "name": "Five Days Value Added Course on PCB Design",
-        "image": PCB_Design
+        img: PCB_Design
       },
       {
         "name": "Five Days Value Added Course on Crafting Circuits: A Beginner’s Guide to Artix-7 FPGA Board",
-        "image": FPGABoard
+        img: FPGABoard
       },
       {
         "name": "Two Days Workshop on Design and Development of Antennas and RF Systems for 5G Wireless Communications from Concept to Reality",
-        "image": WirelessCommunication
+        img: WirelessCommunication
       }
     ],
     faculties: [
       {
         name: "Dr. T. Venishkumar",
         qualification: "M.E., Ph.D",
-        image: venishkumarImage,
+        img: venishkumarimg,
         position: "Associate Professor & Head [I/C]"
       },
       {
         name: "Dr. N. Mathavan",
         qualification: "B.Tech., ME., Ph.D",
-        image: mathavanImage,
+        img: mathavanimg,
         position: "Vice Principal"
       },
       {
         name: "Mr. M. Idhayachandran",
         qualification: "M.E.",
-        image: idhayachandranImage,
+        img: idhayachandranimg,
         position: "Assistant Professor"
       },
       {
         name: "Mr. S. Prathap",
         qualification: "M.E (PhD)",
-        image: prathapImage,
+        img: prathapimg,
         position: "Assistant Professor"
       },
       {
         name: "Mr. R. Pradeep Kumar",
         qualification: "M.E (PhD)",
-        image: pradeepkumarImage,
+        img: pradeepkumarimg,
         position: "Assistant Professor"
       },
       {
         name: "Mrs. T. Tamil Selvi",
         qualification: "M.Tech., (Ph.D.)",
-        image: tamilselviImage,
+        img: tamilselviimg,
         position: "Assistant Professor"
       },
       {
         name: "Mrs. P. Shantha Devi",
         qualification: "M.E., (Ph.D.)",
-        image: shanthadeviImage,
+        img: shanthadeviimg,
         position: "Assistant Professor"
       },
       {
         name: "Mrs. S. Kalaivani",
         qualification: "M.Tech.",
-        image: kalaivaniImage,
+        img: kalaivaniimg,
         position: "Assistant Professor"
       },
       {
         name: "Mrs. P. Gowthami",
         qualification: "M.E.",
-        image: gowthamiImage,
+        img: gowthamiimg,
         position: "Assistant Professor"
       }
     ]
@@ -676,7 +676,7 @@ export const Departments = [
     description: "Electrical and Electronics Engineering focuses on designing, developing, and maintaining electrical systems, electronic devices, and automation technologies for industries, power systems, and modern communication networks.",
     association: eee_assoc,
     associationName: 'Electroblitz',
-    introImage: [
+    introimg: [
       eee_1,
       eee_2,
       eee_3
@@ -685,90 +685,90 @@ export const Departments = [
 
       {
         "name": "Technical Events (Symposium) – Ist Prize – Rs.2000 Cash – Thiyagarajar College Of Engineering",
-        "image": tech_symposium
+        img: tech_symposium
       },
       {
         "name": "Hackathon Project – Rs.5000 Cash – Featured in Dinamalar Newspaper",
-        "image": Hackathon_eee
+        img: Hackathon_eee
       }
 
     ],
     activites: [
       {
         "name": "Industrial Visit to Mithandham Renewable Energy, Cochin",
-        "image": iv_eee
+        img: iv_eee
       },
       {
         "name": "One Day Workshop on Electrical CAD (E-CAD)",
-        "image": e_cad
+        img: e_cad
       },
 
       {
         "name": "Five Days VAC on Modelling of Non-Conventional Energy Technology",
-        "image": energy_tech
+        img: energy_tech
       },
       {
         "name": "Two Days Hands-on Workshop on Realtime Power System Analysis",
-        "image": power_system
+        img: power_system
       },
       {
         "name": "Field Visit - Substation, Kamatchipuram",
-        "image": substation_iv
+        img: substation_iv
       }
     ],
     faculties: [
       {
         name: "Dr. R. Athilingam",
         qualification: "M.E., Ph.D",
-        image: athilingamImage,
+        img: athilingamimg,
         position: "Associate Professor & Head [I/C]"
       },
       {
         name: "Mr. K. Ganesh",
         qualification: "M.E., (Ph.D.)",
-        image: ganeshImage,
+        img: ganeshimg,
         position: "Assistant Professor"
       },
       {
         name: "Mr. R. Raja Karthick",
         qualification: "M.E.",
-        image: rajaKarthickImage,
+        img: rajaKarthickimg,
         position: "Assistant Professor"
       },
       {
         name: "Mrs. A. Nishetha Jeflin Nixon",
         qualification: "M.E.",
-        image: nishethaImage,
+        img: nishethaimg,
         position: "Assistant Professor"
       },
       {
         name: "Mrs. M. Vijayalakshmi",
         qualification: "M.E.",
-        image: vijayalakshmiImage,
+        img: vijayalakshmiimg,
         position: "Assistant Professor"
       },
       {
         name: "Mr. K. Bharathi Kannan",
         qualification: "M.E.",
-        image: bharathiKannanImage,
+        img: bharathiKannanimg,
         position: "Assistant Professor"
       },
       {
         name: "Mr. C. Shiva",
         qualification: "M.E., (Ph.D.)",
-        image: shivaImage,
+        img: shivaimg,
         position: "Assistant Professor"
       },
       {
         name: "Mrs. N. Abirami",
         qualification: "M.E., (Ph.D.)",
-        image: abiramiImage,
+        img: abiramiimg,
         position: "Assistant Professor"
       },
       {
         name: "Mrs. M. Monica Dhana Ranjini",
         qualification: "M.E., (Ph.D.)",
-        image: monicaDhanaRanjiniImage,
+        img: monicaDhanaRanjiniimg,
         position: "Assistant Professor"
       }
     ]
@@ -780,7 +780,7 @@ export const Departments = [
     description: "Information Technology focuses on software, networking, data management, and cybersecurity. It empowers digital communication, automates tasks, and supports innovation across industries, shaping the future through smart, tech-driven solutions and connectivity.",
     association: nexus,
     associationName: 'Network Experts in Unified Systems',
-    introImage: [
+    introimg: [
       it_1,
       it_2,
       it_3
@@ -833,31 +833,31 @@ export const Departments = [
       {
         name: "DR. M. SATHYA",
         qualification: "M.TECH., MBA., Ph.D",
-        image: sathyaImage,
+        img: sathyaimg,
         position: "Vice Principal & Head [I/C]"
       },
       {
         name: "Mrs. A. Sangeetha",
         qualification: "",
-        image: sangeethaImage,
+        img: sangeethaimg,
         position: "Assistant Professor"
       },
       {
         name: "J. KANIMOLI",
         qualification: "M.E.",
-        image: kanimoliImage,
+        img: kanimoliimg,
         position: "Assistant Professor"
       },
       {
         name: "G. KEERTHANA",
         qualification: "M.E.",
-        image: keerthanaImage,
+        img: keerthanaimg,
         position: "Assistant Professor"
       },
       {
         name: "B. SAI SUGANYA",
         qualification: "M.TECH.",
-        image: saiSuganyaImage,
+        img: saiSuganyaimg,
         position: "Assistant Professor"
       }
     ]
@@ -868,7 +868,7 @@ export const Departments = [
     logo: mech,
     description: 'Mechanical Engineering involves the design, analysis, and manufacturing of machines and mechanical systems. It combines physics, materials science, and mathematics to develop innovative solutions in automotive, aerospace, energy, and robotics.',
     association: mass,
-    introImage: [
+    introimg: [
       mech_1,
       mech_2,
       mech_3
@@ -882,82 +882,82 @@ export const Departments = [
 
       {
         "name": "Hackathon Project – Rs.5000 Cash – Dinamalar News Paper",
-        "image": Hackathon_eee
+        img: Hackathon_eee
       }
       ,
       {
         "name": "Entrepreneurship - Ryla Video - Rotary Club of Virudhunagar & Punch Gurukulam",
-        "image": Rotary_Club
+        img: Rotary_Club
       }
 
     ],
     activites: [
       {
         "name": "Industrial Visit to SAIL, Salem",
-        "image": iv_sail
+        img: iv_sail
       },
       {
         "name": "Technical Workshop on 3D Printing",
-        "image": Printing_3d
+        img: Printing_3d
       },
       {
         "name": "Five Day VAC on AutoDesk Fusion 360",
-        "image": AutoDesk_Fusion
+        img: AutoDesk_Fusion
       }
     ],
     faculties: [
       {
         name: "Dr. B. Radha Krishnan",
         qualification: "M.E., Ph.D., MISTE., MIE.",
-        image: radhakrishnanImage,
+        img: radhakrishnanimg,
         position: "Professor & Head [I/C]"
       },
       {
         name: "Mr. A. Vembathurajesh",
         qualification: "M.E., MISTE.",
-        image: vembathurajeshImage,
+        img: vembathurajeshimg,
         position: "Associate Professor & Head [I/C]"
       },
       {
         name: "Mr. R. Santhaseelan",
         qualification: "M.E., MISTE.",
-        image: santhaseelanImage,
+        img: santhaseelanimg,
         position: "Assistant Professor"
       },
       {
         name: "Mr. V. Thirumalairaj",
         qualification: "M.E., MISTE.",
-        image: thirumalairajImage,
+        img: thirumalairajimg,
         position: "Assistant Professor"
       },
       {
         name: "Mr. V. Sivaganesan",
         qualification: "M.E., MISTE.",
-        image: sivaganesanImage,
+        img: sivaganesanimg,
         position: "Assistant Professor"
       },
       {
         name: "Mr. B. Nagarajan",
         qualification: "M.E., MISTE.",
-        image: nagarajanImage,
+        img: nagarajanimg,
         position: "Assistant Professor"
       },
       {
         name: "Mr. P. Surulimani",
         qualification: "M.E., MISTE.",
-        image: surulimaniImage,
+        img: surulimaniimg,
         position: "Assistant Professor"
       },
       {
         name: "Mr. S. Harikishore",
         qualification: "M.E., MISTE.",
-        image: harikishoreImage,
+        img: harikishoreimg,
         position: "Assistant Professor"
       },
       {
         name: "Mr. A. Vennimalai Rajan",
         qualification: "M.E., MISTE.",
-        image: vennimalairajanImage,
+        img: vennimalairajanimg,
         position: "Assistant Professor"
       }
     ]

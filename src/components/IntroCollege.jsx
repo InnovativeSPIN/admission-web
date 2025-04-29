@@ -23,6 +23,11 @@ const IntroCollege = ({ onClick }) => {
           Your browser does not support the video tag.
         </video>
       </div>
+      <div className="Counselling_code">
+        <h2>
+        Counselling code : 5865
+        </h2>
+      </div>
 
       {showDept && (
         <motion.div
