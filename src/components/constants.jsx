@@ -237,7 +237,7 @@ export const Departments = [
     img: bharathi_ula_1
   }
 ],
-activities: [
+activites: [
   {
     name: "Association Inauguration of 'AIM' & 'NEXUS'",
     img: nexus_event
