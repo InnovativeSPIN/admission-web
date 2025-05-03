@@ -178,6 +178,7 @@ import nagarajanimg from '../assets/staff/mech/nagarajan.jpg';
 import surulimaniimg from '../assets/staff/mech/Surulimani.jpg';
 import harikishoreimg from '../assets/staff/mech/harikishore.jpg';
 import vennimalairajanimg from '../assets/staff/mech/Vennimalairajan.jpg';
+import principal from "../assets/patrons/Principal.jpg"
 
 
 export const CollegeLogos = [
@@ -210,63 +211,57 @@ export const Departments = [
       ai_ds_2,
       ai_ds_3
     ],
-    achievements: [
-
-      {
-        name: "Tech Spectrum’24 - 3rd Prize In Idea Nova",
-        img: tech_spectrum
-      },
-      {
-        name: 'won Smart India Hackathon 2023 - Maharashtra',
-        img: sih_2
-      },
-      {
-        name: 'Quantathon 2.0 X IBM Qiskit at SRM University',
-        img: srm
-      },
-      {
-        name: "Participation 36-hour Hackathon at Karur Kumarasamy College of Engineering",
-        img: karurCollege
-      },
-      {
-        name: "Bharathi Ula 2024 Speech Competition - (II-Prize)",
-        img: bharathi_ula_2
-      },
-      {
-        name: "Bharathi Ula 2024 Speech Competition - (III-Prize)",
-        img: bharathi_ula_1
-      },
-
-
-
-    ],
-    activites: [
-
-      {
-        name: "Association Inauguration of “AIM” & “NEXUS”",
-        img: nexus_event
-      },
-      {
-        name: "Web App Development: Students create full-stack applications for NSCET Hackathon and 'Waves' competition.",
-        img: nscet_hack
-      },
-      {
-        name: "College Website Development: Students contribute to the design, development, and maintenance of the NSCET website.",
-        img: nscet_web
-      },
-      {
-        name: "Mobile App Development: Students build mobile apps like the NSCET Transport Management System.",
-        img: transport_app
-      },
-      {
-        name: "5 Day – VAC on Laravel and Django",
-        img: vac
-      },
-      {
-        name: "Seminar on “Mastering the Job Hunt: Interview Preparation for Professional Careers”",
-        img: ai_ds_seminar
-      },
-
+   achievements: [
+  {
+    name: "Tech Spectrum 2024 – 3rd Prize in Idea Nova",
+    img: tech_spectrum
+  },
+  {
+    name: "Winner – Smart India Hackathon 2023, Maharashtra",
+    img: sih_2
+  },
+  {
+    name: "Participant – Quantathon 2.0 x IBM Qiskit, SRM University",
+    img: srm
+  },
+  {
+    name: "Participant – 36-hour Hackathon at Karur Kumarasamy College of Engineering",
+    img: karurCollege
+  },
+  {
+    name: "Bharathi Ula 2024 – Speech Competition (2nd Prize)",
+    img: bharathi_ula_2
+  },
+  {
+    name: "Bharathi Ula 2024 – Speech Competition (3rd Prize)",
+    img: bharathi_ula_1
+  }
+],
+activities: [
+  {
+    name: "Association Inauguration of 'AIM' & 'NEXUS'",
+    img: nexus_event
+  },
+  {
+    name: "Web App Development – Created full-stack applications for the NSCET Hackathon and 'Waves' competition",
+    img: nscet_hack
+  },
+  {
+    name: "College Website Development – Contributed to the design, development, and maintenance of the NSCET website",
+    img: nscet_web
+  },
+  {
+    name: "Mobile App Development – Built mobile apps including the NSCET Transport Management System",
+    img: transport_app
+  },
+  {
+    name: "5-Day Value-Added Course on Laravel and Django",
+    img: vac
+  },
+  {
+    name: "Seminar – 'Mastering the Job Hunt: Interview Preparation for Professional Careers'",
+    img: ai_ds_seminar
+  }
 
     ],
     faculties: [
@@ -322,65 +317,47 @@ export const Departments = [
       civil_2,
       civil_3
     ],
-    achievements: [
-      {
-        name: "3 Days Boot Camp for EDII’s Hackathon 2023-24",
-        img: EDIIHackathon
-      },
-      {
-        name: "State Level Technical Symposium (CIVICTURE 2K25) – Innovation Showcase – IInd Prize",
-        img: civiture_1
-      },
-      {
-        name: "State Level Technical Symposium (CIVICTURE 2K25) – Sensory Bites-Enact – IInd Prize",
-        img: civiture_2
-      }
-    ],
-    activites: [
-      {
-        name: "Madurai Build Expo Visit",
-        img: BuildExpo
-      },
+  achievements: [
+  {
+    name: "3-Day Boot Camp for EDII Hackathon 2023–24",
+    img: EDIIHackathon
+  },
+  {
+    name: "State-Level Technical Symposium (CIVICTURE 2K25) – Innovation Showcase – 2nd Prize",
+    img: civiture_1
+  },
+  {
+    name: "State-Level Technical Symposium (CIVICTURE 2K25) – Sensory Bites Enact – 2nd Prize",
+    img: civiture_2
+  }
+],
+activites: [
+  {
+    name: "Madurai Build Expo Visit",
+    img: BuildExpo
+  },
+  {
+    name: "EYCA Inauguration",
+    img: civil_association
+  },
+  {
+    name: "Final Year Industrial Visit to Kochi",
+    img: civiliv
+  },
+  {
+    name: "Seminar on Soil Stability",
+    img: soilseminar
+  },
+  {
+    name: "GATE 2025 Blueprint Session",
+    img: gate_blueprint
+  },
+  {
+    name: "Seminar on Biodiversity and Conservation",
+    img: biodiversity
+  }
+],
 
-      {
-        name: "EYCA Inauguration",
-        img: civil_association
-      },
-      {
-        name: "IV Year Kochi Industrial Visit",
-        img: civiliv
-      },
-      {
-        name: "Soil Stability Seminar",
-        img: soilseminar
-      },
-
-      {
-        name: "GATE 2025 Blueprint",
-        img: gate_blueprint
-      },
-      // {
-      //   name: "VAC - III Year: Structural Design",
-      //   img: ""
-      // },
-
-      // {
-      //   name: "VAC - II Year: Drafting 2D & 3D",
-      //   img: ""
-      // },
-      {
-        name: "Biodiversity & Conservation Seminar",
-        img: biodiversity
-      },
-      // {
-      //   name: "VAC - IV Year: Technical Upskilling",
-      //   img: ""
-      // },
-      // {
-      //   name: "Steel Structures Seminar",
-      //   img: ""
-      // }
-    ],
     faculties: [
       {
         name: "Mr. N. Nagarathinam",
@@ -452,60 +429,59 @@ export const Departments = [
       cse_2,
       cse_3
     ],
-    achievements: [
-      {
-        name: 'S. Mukilan placed at WiserStack with ₹1L/month package',
-        img: mukilan_12
-      },
-        {
-              name:"Skill India Award - 2nd Place",
-              img:tn_skills
-          },
-          {
-              name:"Kalam Young Achiever Awards - 24",
-              img:kalam_young
-          },
-      {
-        name: "National Space Day-II Price",
-        img: space_day
-      },
-      {
-        name: 'won Smart India Hackathon 2023 - Assam',
-        img: sihassam
-      },
-      {
-        name: 'won Smart India Hackathon 2023 - Maharashtra',
-        img: sih_2
-      },
-      {
-        name: 'Phiramoth G.K. secured 2nd in State Cycling, participated Nationally',
-        img: Phiramoth
-      },
-      {
-        name: 'Won NAAN Mudhalvan Hackathon 2025 (2 final-year teams)',
-        img: ''
-      }
+  achievements: [
+  {
+    name: "S. Mukilan placed at WiserStack with ₹1L/month package",
+    img: mukilan_12
+  },
+  {
+    name: "Skill India Award – 2nd Place",
+    img: tn_skills
+  },
+  {
+    name: "Kalam Young Achiever Awards 2024",
+    img: kalam_young
+  },
+  {
+    name: "National Space Day – 2nd Prize",
+    img: space_day
+  },
+  {
+    name: "Winner – Smart India Hackathon 2023, Assam",
+    img: sihassam
+  },
+  {
+    name: "Winner – Smart India Hackathon 2023, Maharashtra",
+    img: sih_2
+  },
+  {
+    name: "Phiramoth G.K. – 2nd Place in State Cycling, National Participant",
+    img: Phiramoth
+  },
+  {
+    name: "Winners – NAAN Mudhalvan Hackathon 2025 (2 Final-Year Teams)",
+    img: ""
+  }
+],
+activites:[
+  {
+    name: "FIST Association Inauguration",
+    img: fist_assoc
+  },
+  {
+    name: "Seminar on Generative AI: Transforming the IT Industry",
+    img: webinar_it
+  },
+  {
+    name: "Industrial Visit to Spectrum Software Solutions, Cochin (54 Students)",
+    img: ivspectrum
+  },
+  {
+    name: "5-Day Value-Added Course on Laravel and Django",
+    img: vaccse
+  }
+],
 
-    ],
-    activites: [
-
-      {
-        name: "FIST Association Inauguration",
-        img: fist_assoc
-      },
-      {
-        name: "Seminar on Generative AI: Transforming the IT Industry",
-        img: webinar_it
-      },
-      {
-        name: "Industrial Visit to Spectrum Software Solution, Cochin (54 Students)",
-        img: ivspectrum
-      },
-      {
-        name: "5 Day – VAC on Laravel and Django ",
-        img: vaccse
-      },
-    ],
     faculties: [
       {
         name: "Dr. J. Mathalai Raj",
@@ -576,42 +552,43 @@ export const Departments = [
       ece_2,
       ece_3
     ],
-    achievements: [
-      {
-        "name": "Women’s Day Celebration - Tableau (II Prize)",
-        img: Tableau
-      },
-      {
-        "name": "Rangoli - Ist Prize , III Prize",
-        img: rangoli
-      },
-      {
-        "name": "Hackathon - III Prize (Kalasalingam)",
-        img: Kalasalingam
-      },
-      {
-        "name": "Euphoria 2K25 - 2nd Position",
-        img: Euphoria2k25
-      },
-      {
-        "name": "Hackathon - I Prize (VHNSN College)",
-        img: vhnsn
-      },
-    ],
-    activites: [
-      {
-        "name": "Five Days Value Added Course on PCB Design",
-        img: PCB_Design
-      },
-      {
-        "name": "Five Days Value Added Course on Crafting Circuits: A Beginner’s Guide to Artix-7 FPGA Board",
-        img: FPGABoard
-      },
-      {
-        "name": "Two Days Workshop on Design and Development of Antennas and RF Systems for 5G Wireless Communications from Concept to Reality",
-        img: WirelessCommunication
-      }
-    ],
+   achievements: [
+  {
+    name: "Women's Day Celebration – Tableau (2nd Prize)",
+    img: Tableau
+  },
+  {
+    name: "Rangoli – 1st Prize & 3rd Prize",
+    img: rangoli
+  },
+  {
+    name: "Hackathon – 3rd Prize (Kalasalingam University)",
+    img: Kalasalingam
+  },
+  {
+    name: "Euphoria 2K25 – 2nd Position",
+    img: Euphoria2k25
+  },
+  {
+    name: "Hackathon – 1st Prize (VHNSN College)",
+    img: vhnsn
+  }
+],
+
+activites: [
+  {
+    name: "Five-Day Value-Added Course on PCB Design",
+    img: PCB_Design
+  },
+  {
+    name: "Five-Day Value-Added Course on Crafting Circuits: A Beginner's Guide to Artix-7 FPGA Board",
+    img: FPGABoard
+  },
+  {
+    name: "Two-Day Workshop on Design and Development of Antennas and RF Systems for 5G Wireless Communications: From Concept to Reality",
+    img: WirelessCommunication
+  }
+],
     faculties: [
       {
         name: "Dr. T. Venishkumar",
@@ -681,41 +658,39 @@ export const Departments = [
       eee_2,
       eee_3
     ],
-    achievements: [
+   achievements: [
+  {
+    name: "Technical Events (Symposium) – 1st Prize – ₹2000 Cash – Thiyagarajar College of Engineering",
+    img: tech_symposium
+  },
+  {
+    name: "Hackathon Project – ₹5000 Cash – Featured in Dinamalar Newspaper",
+    img: Hackathon_eee
+  }
+],
+activites: [
+  {
+    name: "Industrial Visit to Mithandham Renewable Energy, Cochin",
+    img: iv_eee
+  },
+  {
+    name: "One-Day Workshop on Electrical CAD (E-CAD)",
+    img: e_cad
+  },
+  {
+    name: "Five-Day Value-Added Course on Modelling of Non-Conventional Energy Technologies",
+    img: energy_tech
+  },
+  {
+    name: "Two-Day Hands-on Workshop on Real-time Power System Analysis",
+    img: power_system
+  },
+  {
+    name: "Field Visit – Substation, Kamatchipuram",
+    img: substation_iv
+  }
+],
 
-      {
-        "name": "Technical Events (Symposium) – Ist Prize – Rs.2000 Cash – Thiyagarajar College Of Engineering",
-        img: tech_symposium
-      },
-      {
-        "name": "Hackathon Project – Rs.5000 Cash – Featured in Dinamalar Newspaper",
-        img: Hackathon_eee
-      }
-
-    ],
-    activites: [
-      {
-        "name": "Industrial Visit to Mithandham Renewable Energy, Cochin",
-        img: iv_eee
-      },
-      {
-        "name": "One Day Workshop on Electrical CAD (E-CAD)",
-        img: e_cad
-      },
-
-      {
-        "name": "Five Days VAC on Modelling of Non-Conventional Energy Technology",
-        img: energy_tech
-      },
-      {
-        "name": "Two Days Hands-on Workshop on Realtime Power System Analysis",
-        img: power_system
-      },
-      {
-        "name": "Field Visit - Substation, Kamatchipuram",
-        img: substation_iv
-      }
-    ],
     faculties: [
       {
         name: "Dr. R. Athilingam",
@@ -785,50 +760,47 @@ export const Departments = [
       it_2,
       it_3
     ],
-    achievements: [
-      {
-        name: 'Participate Smart India Hackathon 2023 - Assam',
-        img: sihassam
-      },
-      {
-        name: 'won Smart India Hackathon 2023 - Maharashtra',
-        img: sih_2
-      },
-      {
-        name: "Participation 36-hour Hackathon at Karur Kumarasamy College of Engineering",
-        img: karurCollege
-      },
-      {
-        name: 'Quantathon 2.0 X IBM Qiskit at SRM University',
-        img: srm
-      },
+   achievements: [
+  {
+    name: "Participation in Smart India Hackathon 2023 – Assam",
+    img: sihassam
+  },
+  {
+    name: "Winner – Smart India Hackathon 2023 – Maharashtra",
+    img: sih_2
+  },
+  {
+    name: "Participation in 36-Hour Hackathon at Karur Kumarasamy College of Engineering",
+    img: karurCollege
+  },
+  {
+    name: "Quantathon 2.0 X IBM Qiskit at SRM University",
+    img: srm
+  }
+],
+activites: [
+  {
+    name: "Association Inauguration of 'AIM' & 'NEXUS'",
+    img: nexus_event
+  },
+  {
+    name: "Web App Development: Students create full-stack applications for NSCET Hackathon and 'Waves' competition",
+    img: nscet_hack
+  },
+  {
+    name: "College Website Development: Students contribute to the design, development, and maintenance of the NSCET website",
+    img: nscet_web
+  },
+  {
+    name: "Mobile App Development: Students build mobile apps like the NSCET Transport Management System",
+    img: transport_app
+  },
+  {
+    name: "Five-Day VAC on Laravel and Django",
+    img: vac
+  }
+],
 
-
-    ],
-    activites: [
-
-      {
-        name: "Association Inauguration of “AIM” & “NEXUS”",
-        img: nexus_event
-      },
-      {
-        name: "Web App Development: Students create full-stack applications for NSCET Hackathon and 'Waves' competition.",
-        img: nscet_hack
-      },
-
-      {
-        name: "College Website Development: Students contribute to the design, development, and maintenance of the NSCET website.",
-        img: nscet_web
-      },
-      {
-        name: "Mobile App Development: Students build mobile apps like the NSCET Transport Management System.",
-        img: transport_app
-      },
-      {
-        name: "5 Day – VAC on Laravel and Django",
-        img: vac
-      }
-    ],
     faculties: [
       {
         name: "DR. M. SATHYA",
@@ -875,37 +847,41 @@ export const Departments = [
     ],
     associationName: 'Mechanical Association of Student Society',
     achievements: [
-      {
-        name: "Tech Spectrum’24 - 3rd Prize In Idea Nova",
-        img: tech_spectrum
-      },
+  {
+    name: "Tech Spectrum'24 – 3rd Prize in Idea Nova",
+    img: tech_spectrum
+  },
+  {
+    name: "Hackathon Project – ₹5000 Cash – Featured in Dinamalar Newspaper",
+    img: Hackathon_eee
+  },
+  {
+    name: "Entrepreneurship – Ryla Video – Rotary Club of Virudhunagar & Punch Gurukulam",
+    img: Rotary_Club
+  }
+],
+activites: [
+  {
+    name: "Industrial Visit to SAIL, Salem",
+    img: iv_sail
+  },
+  {
+    name: "Technical Workshop on 3D Printing",
+    img: Printing_3d
+  },
+  {
+    name: "Five-Day VAC on AutoDesk Fusion 360",
+    img: AutoDesk_Fusion
+  }
+],
 
-      {
-        "name": "Hackathon Project – Rs.5000 Cash – Dinamalar News Paper",
-        img: Hackathon_eee
-      }
-      ,
-      {
-        "name": "Entrepreneurship - Ryla Video - Rotary Club of Virudhunagar & Punch Gurukulam",
-        img: Rotary_Club
-      }
-
-    ],
-    activites: [
-      {
-        "name": "Industrial Visit to SAIL, Salem",
-        img: iv_sail
-      },
-      {
-        "name": "Technical Workshop on 3D Printing",
-        img: Printing_3d
-      },
-      {
-        "name": "Five Day VAC on AutoDesk Fusion 360",
-        img: AutoDesk_Fusion
-      }
-    ],
     faculties: [
+       {
+          name:"Dr. C. Mathalai Sundaram",
+          img:principal,
+          position: "Professor & Principal",
+          qualification: "B.E, M.B.A, M.E, Ph.D",
+        },
       {
         name: "Dr. B. Radha Krishnan",
         qualification: "M.E., Ph.D., MISTE., MIE.",

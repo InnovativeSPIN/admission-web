@@ -52,6 +52,12 @@ import merayuva from "../assets/s_and_h/merayuva.jpeg"
 import healthyfit from "../assets/s_and_h/healthyfit.jpeg"
 import kfc from "../assets/s_and_h/kfc.jpg"
 
+// patrons
+import principal from "../assets/patrons/Principal.jpg"
+import Mathavan from "../assets/patrons/Mathavan.jpg"
+import sathya from "../assets/patrons/sathya.jpeg"
+import dr_karthikeyan from "../assets/patrons/dr_karthikeyan.png"
+
 
 export const placements = [
   { id: 1, src: placement1, alt: "Placement 1" },
@@ -189,3 +195,31 @@ export const dept=[
   },
 
 ] 
+
+export const patrons=[
+  {
+    name:"Dr. C. Mathalai Sundaram",
+    img:principal,
+    Designation: "Professor & Principal",
+    Qualification: "B.E, M.B.A, M.E, Ph.D",
+  },
+  {
+    name:" Dr. N. Mathavan",
+    img:Mathavan,
+    Designation: "Vice Principal",
+    Qualification: "B.Tech., ME., Ph.D",
+  },
+  {
+    name:"Dr. M. SATHYA",
+    img:sathya,
+    Designation: "Vice Principal | HOD IT",
+    Qualification: "M.TECH., MBA., Ph.D",
+  },
+  {
+    name:"Dr.C.Karthikeyan",
+    img:dr_karthikeyan,
+    Designation: "Training and Placement Officer",
+    Qualification: "B.E, M.B.A, M.E, Ph.D",
+  }
+  
+]
